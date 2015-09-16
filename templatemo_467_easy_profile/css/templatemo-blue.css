@@ -162,43 +162,11 @@ header hr {
   background: #fff;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
-#drawBtn1 {
-    width:180px;
-	height:81px;
-	border: none;
-	background:url(../images/singledraw1.png);
-}
-
-#drawBtn1:active {
-	border: none;
-    background:url(../images/singledraw2.png);
-}
-#drawBtn2 {
-    width:180px;
-	height:81px;
-	border: none;
-	background:url(../images/tendraw1.png);
-}
-
-#drawBtn2:active {
-	border: none;
-    background:url(../images/tendraw2.png);
-}
-
-#cardBanner {
-	border: none;
-	background:url(../images/banner_21331_3nfedxu2.png);
-	background-size: 80px 60px;
-}
-
-.blockitems {
-	margin: 10px 10px;
-}
 
 /* skills section */
 .skills {
   background: #3366CC;
-  color: #00F;
+  color: #f5f5f5;
 }
 .skills .progress {
   border-radius: 0px;

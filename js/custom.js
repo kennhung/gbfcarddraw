@@ -20,3 +20,5 @@ $(function(){
 	 			], 	{duration: 6200, fade: 1300, centeredX: false, centeredY: false});
 		});
 })
+
+$("#cardBG").backstretch("images/gacha_result_bg.png");
