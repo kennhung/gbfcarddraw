@@ -4,8 +4,7 @@ function drawR(){
 	if (rGate <= 16) {
 		var dNum = rGate;
 		image.innerHTML = '<img src="R/s' + dNum + '.jpg" width="150"/>';
-	}
-	else if (rGate >= 17 && rGate <= 29) {
+	} else if (rGate >= 17 && rGate <= 29) {
 		var dNum = rGate - 16;
 		image.innerHTML = '<img src="R/n' + dNum + '.jpg" width="150"/>';
 	} else if (rGate >= 30 && rGate <= 39) {
@@ -37,4 +36,4 @@ function drawR(){
 		image.innerHTML = '<img src="R/m' + dNum + '.jpg" width="150"/>';
 	}
 	
-}
+}	
