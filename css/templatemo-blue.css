@@ -162,43 +162,177 @@ header hr {
   background: #fff;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
-#drawBtn1 {
-    width:180px;
-	height:81px;
+
+.goldbar {
+	min-height:40px;
+    max-width:500px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
 	border: none;
-	background:url(../images/singledraw1.png);
+	background:url(../images/goldbar.png);
+	background-size:100% 100%;
 }
 
-#drawBtn1:active {
+.msgbox1 {
+	min-height:40px;
+    max-width:500px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	border: none;
+	background:url(../images/msgbox.png);
+	background-size:100% 100%;
+}
+
+.msgbox1 p{
+	margin-top:3%;
+	color:rgba(255,255,255,1);
+	font-size:small;
+}
+
+.goldbar p {
+	margin-bottom:3%;
+	margin-top:3%;
+	color:rgba(255,255,255,1);
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.goldbar input {
+	background-color:rgba(255,255,255,0);
+	border:hidden;
+	text-shadow:1px 1px 0 #000,  
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.cText {
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.drawBtn1 {
+    max-width:150px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	min-height:80px;
+	vertical-align:top;
+	border: none;
+	background:url(../images/singledraw1.png);
+	background-size:100% 100%;
+}
+
+.drawBtn1 img {
+    border: none;
+	width: 100%;
+	margin-right:auto;
+	margin-bottom:10%;
+	margin-top:10%;
+}
+
+.drawBtn1:active {
 	border: none;
     background:url(../images/singledraw2.png);
+	background-size:100% 100%;
 }
 #drawBtn2 {
-    width:180px;
-	height:81px;
+    max-width:150px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	min-height:80px;
+	vertical-align:top;
 	border: none;
 	background:url(../images/tendraw1.png);
+	background-size:100% 100%;
+	
+}
+
+#drawBtn2 img {
+    width:100%;
+	margin-bottom:10%;
+	margin-top:10%;
 }
 
 #drawBtn2:active {
 	border: none;
     background:url(../images/tendraw2.png);
+	background-size:100% 100%;
 }
 
-#cardBanner {
+.updateTitle {
+	margin-top:10%;
+}
+
+.classBG {
+	min-height:240px;
+	max-height:100%;
+	
+}
+
+.contenttable {
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:500px;
+	max-height:120px;
+	min-height:40px;
+}
+
+.contenttable2 {
+	background:url(../images/bg_gold.png) no-repeat; 
+	background-size:100% 100%;
+	margin-right:auto;
+	margin-left:auto;
+	vertical-align:top;
+	max-width:530px;
+}
+
+.contenttable2 img {
 	border: none;
-	background:url(../images/banner_21331_3nfedxu2.png);
-	background-size: 80px 60px;
+	max-width: 100%;
+	margin-right:auto;
+	
+}
+
+#cotentbanner {
+	margin-top:20%;
 }
 
 .blockitems {
-	margin: 10px 10px;
+	margin: 5px 5px;
 }
+.blockitems img {
+	max-width:100%;
+}
+
+.blockitems2 {
+	margin: 5px 5px;
+}
+
+.blockitems2 img {
+	max-width:95px;
+}
+
+
 
 /* skills section */
 .skills {
-  background: #3366CC;
+  background:rgba(0,102,255,0);
   color: #00F;
+  border-radius: 5%;
 }
 .skills .progress {
   border-radius: 0px;
@@ -215,12 +349,38 @@ header hr {
 
 /* education section */
 .education {
-  background: #3366CC;
+  background:rgba(255,255,255,0);
   color: #f5f5f5;
 }
 .education .education-content {
-  padding-bottom: 14px;
+  background:url(../images/msgbox2.png) no-repeat; 
+	background-size:100% 100%;
+	margin-right:auto;
+	margin-left:auto;
+	vertical-align:top;
+	max-width:400px;
+	height:150px;
 }
+.education .education-content h3 {
+	margin-top:3%;
+	margin-left:3%;
+	color:rgba(255,255,255,1);
+	font-size:medium;
+}
+
+.education .education-content p {
+	margin-top:2%;
+	margin-left:3%;
+	color:rgba(0,0,0,1);
+	font-size:medium;
+}
+
+.education .education-content li {
+	margin-left:3%;
+	color:rgba(0,0,0,1);
+	font-size:medium;
+}
+
 .education h5 {
   display: inline-block;
 }

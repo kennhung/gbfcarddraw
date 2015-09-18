@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>碧藍幻想抽卡模擬器v0.3</title>
+	<title>碧藍幻想抽卡模擬器v0.4</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -18,7 +18,10 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
     
     <script type="text/javascript" src="singleDraw.js"></script>
 <script type="text/javascript" src="tenDraw.js"></script>
-<script> var cashValue; </script>
+<script>
+var cashValue;
+var itemwidth;
+</script>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 
@@ -36,7 +39,7 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">碧藍幻想抽卡模擬器v0.3</h1>
+				<h1 class="tm-title bold shadow">碧藍幻想抽卡模擬器v0.4</h1>
 				<h1 class="white bold shadow">by Wee張同學</h1>
 			</div>
 		</div>
@@ -47,45 +50,49 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
 <section class="container">
 	<div class="row">
 		<div class="col-md-6 col-sm-12">
-			<div id="cardBG">
-			  <table border="0" style="padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto" height="89px">
+			<div id="cardBG" class="classBG">
+			  <table border="0" class="contenttable">
 			    <tr>
-			      <td><div class="blockitems" id="item1" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item2" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item3" width="120" height="69"></div></td>
+			      <td><div class="blockitems2" id="item1" ></div></td>
+			      <td><div class="blockitems2" id="item2" ></div></td>
+			      <td><div class="blockitems2" id="item3" ></div></td>
 		        </tr>
 		      </table>
-              <table border="0" style="padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto" height="89px">
+              <table border="0" class="contenttable">
 			    <tr>
-			      <td><div class="blockitems" id="item4" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item5" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item6" width="120" height="69"></div></td>
-                  <td><div class="blockitems" id="item7" width="120" height="69"></div></td>
+			      <td><div class="blockitems" id="item4" ></div></td>
+			      <td><div class="blockitems" id="item5" ></div></td>
+			      <td><div class="blockitems" id="item6" ></div></td>
+                  <td><div class="blockitems" id="item7" ></div></td>
 		        </tr>
 		      </table>
-              <table border="0" style="padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto" height="89px">
+              <table border="0" class="contenttable">
 			    <tr>
-			      <td><div class="blockitems" id="item8" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item9" width="120" height="69"></div></td>
-			      <td><div class="blockitems" id="item10" width="120" height="69"></div></td>
+			      <td><div class="blockitems2" id="item8"></div></td>
+			      <td><div class="blockitems2" id="item9"></div></td>
+			      <td><div class="blockitems2" id="item10"></div></td>
 		        </tr>
 		      </table>
+              
 			  <br/>
             
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-12">
 			<div class="skills">
-            	<table style="background:url(images/bg_gold.png) no-repeat; padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto" width="500px"><tr><td style="height:70px"></td></tr>
-            <tr><td style="width:50px" rowspan="2"></td><td id="cardBanner">
+            	<table class="contenttable2" border="0">
+            		<tr><td style="width:12%" rowspan="4"></td><td id="cardBanner">
                 </td></tr>
-            <tr><td><img src="images/banner_21331_3nfedxu2.png" width="400" />
-                <button type="image" id="drawBtn1" onclick="singleDraw()"><img src="images/text_legend.png" /></button>
+            		<tr><td><img id="cotentbanner" src="images/banner_21331_3nfedxu2.png" />
+                <button type="image" class="drawBtn1" onclick="singleDraw()"><img src="images/text_legend.png"/></button>
                 
-                <button onclick="tenDraw()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
-                <form name="cash">課金累計：<input type="text" name="Display" value="0" size="16" disabled></form>
-                <p>注意：目前v0.3版本沒有任何up，屬於完全平均抽卡</p>
-            </td></tr></table>
+                <button type="image" onclick="tenDraw()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
+				</td></tr><tr><td class="goldbar">
+                <form name="cash"><div style="margin-left: 5%; font-size:small;"><p>課金累計：<input type="text" name="Display" value="0" size="16" disabled></div></form></p>
+                </td></tr><tr><td class="msgbox1">
+				<p>注意：目前v0.4版本沒有任何up，屬於完全平均抽卡</p>
+            </td><td style="width:12%" rowspan="2"></td></tr>
+            <tr><td rowspan="3" height="5%">&nbsp;</td></tr></table>
 			</div>
 		</div>
 	</div>
@@ -96,22 +103,28 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
 	<div class="row">
 		<div class="col-md-8 col-sm-12">
 			<div class="education">
-				<h2 class="white">更新日誌</h2>
-					<div class="education-content">
-                    	<p>09/16/2015:v0.3<br>
-                        更新按鈕和按鈕背景樣貌，按鈕周邊新增框框
-                    	<p>09/16/2015: v0.2<br>
-                        修改界面，界面取用及修改自<a href="http://www.templatemo.com/free-website-templates/467-easy-profile">Free Templates - Easy Profile</a>
-                        <p>09/14/2015：v0.1<br>
-                        具備基本的單抽和十抽功能和課金累計</p>
-                        <p><b>更新目標</b></p>
+				<table><tr><td class="msgbox1" width="40%"><h2><div class="updateTitle">更新日誌</div></h2></td></tr></table>
+                	<table><tr><td class="education-content" width="20%">
+                    	<h3>09/18/2015: v0.4</h3>
+                        <p>修正部分手機用模擬器十抽無法完全顯示十張卡片的問題<br />更新系統框框</p></td></tr></table>
+					<table><tr><td class="education-content" width="20%">
+                    	<h3>09/16/2015: v0.3</h3>
+                        <p>更新按鈕和按鈕背景樣貌，按鈕周邊新增框框</p></td></tr></table>
+                    <table><tr><td class="education-content" width="20%">
+                    	<h3>09/16/2015: v0.2</h3>
+                        <p>修改界面，界面取用及修改自<a href="http://www.templatemo.com/free-website-templates/467-easy-profile">Free Templates - Easy Profile</a></p></td></tr></table>
+                     <table><tr><td class="education-content" width="20%">
+                    	<h3>09/14/2015: v0.1</h3>
+                        <p>具備基本的單抽和十抽功能和課金累計</p></td></tr></table>
+                        <table><tr><td class="education-content" width="20%">
+                    	<h3>更新目標</h3>
                         <li>多加一個角色欄顯示本次十抽共抽到什麼角色的解放武器</li>
                         <li>增加各種屬性up和武器up的選項并對應必SSR（一次）</li>
                         <li>新增6%</li>
                         <li>加強界面</li>
                         <li>增加期望值計算器</li>
-                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li>
-                        </ul>
+                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li></td></tr></table>
+                        
 					</div>
 			</div>
 		</div>
@@ -123,7 +136,7 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<p>Copyright &copy; 2015 Wee張同學</p>
+				<p class="cText">Copyright &copy; 2015 Wee張同學</p>
 				
 			</div>
 		</div>
