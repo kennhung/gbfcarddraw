@@ -17,7 +17,7 @@ $(function(){
 			 "images/vira.jpg",
 			 "images/serephina.jpg",
 			 "images/soshia2.jpg"
-	 			], 	{duration: 6200, fade: 1300, centeredX: false, centeredY: false});
+	 			], 	{duration: 10200, fade: 1300, centeredX: false, centeredY: false});
 		});
 })
 

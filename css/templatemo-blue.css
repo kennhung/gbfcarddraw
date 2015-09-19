@@ -163,18 +163,6 @@ header hr {
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 
-.goldbar {
-	min-height:40px;
-    max-width:500px;
-	padding-right:15px;
-	padding-left:15px;
-	margin-right:auto;
-	margin-left:5%;
-	border: none;
-	background:url(../images/goldbar.png);
-	background-size:100% 100%;
-}
-
 .msgbox1 {
 	min-height:40px;
     max-width:500px;
@@ -191,6 +179,48 @@ header hr {
 	margin-top:3%;
 	color:rgba(255,255,255,1);
 	font-size:small;
+}
+
+.silverbar {
+	min-height:40px;
+    max-width:500px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	border: none;
+	background:url(../images/silverbar.png);
+	background-size:100% 100%;
+}
+
+.silverbar p {
+	margin-bottom:3%;
+	margin-top:3%;
+	color:rgba(255,255,255,1);
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	 margin-left: 5%;
+	 font-size:small;
+}
+
+.silverbar select {
+	color:rgba(0,0,0,1);
+	margin-left:5%;
+	font-size:small;
+}
+
+.goldbar {
+	min-height:40px;
+    max-width:500px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	border: none;
+	background:url(../images/goldbar.png);
+	background-size:100% 100%;
 }
 
 .goldbar p {
@@ -327,6 +357,14 @@ header hr {
 }
 
 
+.overlayImage2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width:40%;
+}
+
+
 
 /* skills section */
 .skills {
@@ -391,7 +429,7 @@ header hr {
 
 /* languages section */
 .languages {
-  background: #fff;
+  background:rgba(255,255,255,0);
  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 .languages ul {

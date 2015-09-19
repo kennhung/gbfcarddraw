@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>碧藍幻想抽卡模擬器v0.4</title>
+	<title>碧藍幻想抽卡模擬器v0.5</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -39,7 +39,7 @@ var itemwidth;
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">碧藍幻想抽卡模擬器v0.4</h1>
+				<h1 class="tm-title bold shadow">碧藍幻想抽卡模擬器v0.5</h1>
 				<h1 class="white bold shadow">by Wee張同學</h1>
 			</div>
 		</div>
@@ -51,26 +51,26 @@ var itemwidth;
 	<div class="row">
 		<div class="col-md-6 col-sm-12">
 			<div id="cardBG" class="classBG">
-			  <table border="0" class="contenttable">
+			  <table border="0" class="contenttable" style="margin-top:20%">
 			    <tr>
-			      <td><div class="blockitems2" id="item1" ></div></td>
-			      <td><div class="blockitems2" id="item2" ></div></td>
-			      <td><div class="blockitems2" id="item3" ></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="blockitems2" id="item1" ></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="blockitems2" id="item2" ></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="blockitems2" id="item3" ></div></td>
 		        </tr>
 		      </table>
               <table border="0" class="contenttable">
 			    <tr>
-			      <td><div class="blockitems" id="item4" ></div></td>
-			      <td><div class="blockitems" id="item5" ></div></td>
-			      <td><div class="blockitems" id="item6" ></div></td>
-                  <td><div class="blockitems" id="item7" ></div></td>
+			      <td><div style="position: relative;" class="blockitems" id="item4" ></div></td>
+			      <td><div style="position: relative;" class="blockitems" id="item5" ></div></td>
+			      <td><div style="position: relative;" class="blockitems" id="item6" ></div></td>
+                  <td><div style="position: relative;" class="blockitems" id="item7" ></div></td>
 		        </tr>
 		      </table>
               <table border="0" class="contenttable">
 			    <tr>
-			      <td><div class="blockitems2" id="item8"></div></td>
-			      <td><div class="blockitems2" id="item9"></div></td>
-			      <td><div class="blockitems2" id="item10"></div></td>
+			      <td><div style="position: relative;" class="blockitems2" id="item8"></div></td>
+			      <td><div style="position: relative;" class="blockitems2" id="item9"></div></td>
+			      <td><div style="position: relative;" class="blockitems2" id="item10"></div></td>
 		        </tr>
 		      </table>
               
@@ -89,8 +89,18 @@ var itemwidth;
                 <button type="image" onclick="tenDraw()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
 				</td></tr><tr><td class="goldbar">
                 <form name="cash"><div style="margin-left: 5%; font-size:small;"><p>課金累計：<input type="text" name="Display" value="0" size="16" disabled></div></form></p>
-                </td></tr><tr><td class="msgbox1">
-				<p>注意：目前v0.4版本沒有任何up，屬於完全平均抽卡</p>
+                </td></tr><tr><td class="silverbar">
+					<p>屬性UP選擇：
+					<select size="1" id="slt_dMethod" name="dMethod">
+						<option value="1">無UP</option>
+						<option value="2">火UP</option>
+						<option value="3">水UP</option>
+						<option value="4">土UP</option>
+						<option value="5">風UP</option>
+						<option value="6">光闇UP</option>
+						<option value="7">星晶獸UP</option>
+					</select>
+					</p>
             </td><td style="width:12%" rowspan="2"></td></tr>
             <tr><td rowspan="3" height="5%">&nbsp;</td></tr></table>
 			</div>
@@ -104,6 +114,9 @@ var itemwidth;
 		<div class="col-md-8 col-sm-12">
 			<div class="education">
 				<table><tr><td class="msgbox1" width="40%"><h2><div class="updateTitle">更新日誌</div></h2></td></tr></table>
+					<table><tr><td class="education-content" width="20%">
+                    	<h3>09/19/2015: v0.5</h3>
+                        <p>新增屬性UP功能<br />有解放角色的武器會顯示對應的角色圈圈</p></td></tr></table>
                 	<table><tr><td class="education-content" width="20%">
                     	<h3>09/18/2015: v0.4</h3>
                         <p>修正部分手機用模擬器十抽無法完全顯示十張卡片的問題<br />更新系統框框</p></td></tr></table>
@@ -118,12 +131,12 @@ var itemwidth;
                         <p>具備基本的單抽和十抽功能和課金累計</p></td></tr></table>
                         <table><tr><td class="education-content" width="20%">
                     	<h3>更新目標</h3>
-                        <li>多加一個角色欄顯示本次十抽共抽到什麼角色的解放武器</li>
-                        <li>增加各種屬性up和武器up的選項并對應必SSR（一次）</li>
+						<li>運氣與屬性比例記錄器</li>
+                        <li>新增必SSR（一次）</li>
                         <li>新增6%</li>
                         <li>加強界面</li>
                         <li>增加期望值計算器</li>
-                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li></td></tr></table>
+                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li><p></p></td></tr></table>
                         
 					</div>
 			</div>
@@ -137,7 +150,7 @@ var itemwidth;
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<p class="cText">Copyright &copy; 2015 Wee張同學</p>
-				
+                <p class="cText">LINE ID: wee3200</p>
 			</div>
 		</div>
 	</div>
