@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>碧藍幻想抽卡模擬器v0.5</title>
+	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v0.6</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Granblu Fantasy, Draw Card, Simulator, グランブルーファンタジー, グラブル, ガチャ">
+	<meta name="keywords" content="Granblu Fantasy, Draw Card, Simulator, グランブルーファンタジー, グラブル, ガチャ, シミュレータ, エミュレータ">
 	<meta name="description" content="碧藍幻想グランブルーファンタジー的抽卡模擬器">
 <!-- 
 Easy Profile Template
@@ -15,12 +15,15 @@ http://www.templatemo.com/free-website-templates/467-easy-profile
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-blue.css">
-    
+	
+    <script type="text/javascript" src="bannerChange.js"></script>
     <script type="text/javascript" src="singleDraw.js"></script>
 <script type="text/javascript" src="tenDraw.js"></script>
 <script>
 var cashValue;
 var itemwidth;
+var ssrGet = 1;
+
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -39,7 +42,7 @@ var itemwidth;
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">碧藍幻想抽卡模擬器v0.5</h1>
+				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv0.6<br />碧藍幻想抽卡模擬器v0.6</h1>
 				<h1 class="white bold shadow">by Wee張同學</h1>
 			</div>
 		</div>
@@ -83,7 +86,7 @@ var itemwidth;
             	<table class="contenttable2" border="0">
             		<tr><td style="width:12%" rowspan="4"></td><td id="cardBanner">
                 </td></tr>
-            		<tr><td><img id="cotentbanner" src="images/banner_21331_3nfedxu2.png" />
+            		<tr><td><div id="cotentbanner"><img src="images/banner_21331_3nfedxu2.png" /></div>
                 <button type="image" class="drawBtn1" onclick="singleDraw()"><img src="images/text_legend.png"/></button>
                 
                 <button type="image" onclick="tenDraw()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
@@ -91,14 +94,15 @@ var itemwidth;
                 <form name="cash"><div style="margin-left: 5%; font-size:small;"><p>課金累計：<input type="text" name="Display" value="0" size="16" disabled></div></form></p>
                 </td></tr><tr><td class="silverbar">
 					<p>屬性UP選擇：
-					<select size="1" id="slt_dMethod" name="dMethod">
+					<select onclick="bannerChange()" size="1" id="slt_dMethod" name="dMethod">
 						<option value="1">無UP</option>
 						<option value="2">火UP</option>
-						<option value="3">水UP</option>
-						<option value="4">土UP</option>
+						<option value="3">土UP</option>
+						<option value="4">水UP</option>
 						<option value="5">風UP</option>
 						<option value="6">光闇UP</option>
 						<option value="7">星晶獸UP</option>
+						<option value="8">新キャラUP</option>
 					</select>
 					</p>
             </td><td style="width:12%" rowspan="2"></td></tr>
@@ -111,9 +115,349 @@ var itemwidth;
 <!-- education and languages -->
 <section class="container">
 	<div class="row">
+		<div class="col-md-4 col-sm-12">
+			<div class="contact">
+				<h2>所獲得的SSR</h2>
+				<p style="font-size:small">（獲得超過99個之後會自動覆蓋最舊的）</p>
+					<table><tr>
+						<td><div class="ssrBox" id="box1"></div></td>
+						<td><div class="ssrBox" id="box2"></div></td>
+						<td><div class="ssrBox" id="box3"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box4"></div></td>
+						<td><div class="ssrBox" id="box5"></div></td>
+						<td><div class="ssrBox" id="box6"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box7"></div></td>
+						<td><div class="ssrBox" id="box8"></div></td>
+						<td><div class="ssrBox" id="box9"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box10"></div></td>
+						<td><div class="ssrBox" id="box11"></div></td>
+						<td><div class="ssrBox" id="box12"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box13"></div></td>
+						<td><div class="ssrBox" id="box14"></div></td>
+						<td><div class="ssrBox" id="box15"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box16"></div></td>
+						<td><div class="ssrBox" id="box17"></div></td>
+						<td><div class="ssrBox" id="box18"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box19"></div></td>
+						<td><div class="ssrBox" id="box20"></div></td>
+						<td><div class="ssrBox" id="box21"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box22"></div></td>
+						<td><div class="ssrBox" id="box23"></div></td>
+						<td><div class="ssrBox" id="box24"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box22"></div></td>
+						<td><div class="ssrBox" id="box23"></div></td>
+						<td><div class="ssrBox" id="box24"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box25"></div></td>
+						<td><div class="ssrBox" id="box26"></div></td>
+						<td><div class="ssrBox" id="box27"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box28"></div></td>
+						<td><div class="ssrBox" id="box29"></div></td>
+						<td><div class="ssrBox" id="box30"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box31"></div></td>
+						<td><div class="ssrBox" id="box32"></div></td>
+						<td><div class="ssrBox" id="box33"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box34"></div></td>
+						<td><div class="ssrBox" id="box35"></div></td>
+						<td><div class="ssrBox" id="box36"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box37"></div></td>
+						<td><div class="ssrBox" id="box38"></div></td>
+						<td><div class="ssrBox" id="box39"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box40"></div></td>
+						<td><div class="ssrBox" id="box41"></div></td>
+						<td><div class="ssrBox" id="box42"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box43"></div></td>
+						<td><div class="ssrBox" id="box44"></div></td>
+						<td><div class="ssrBox" id="box45"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box46"></div></td>
+						<td><div class="ssrBox" id="box47"></div></td>
+						<td><div class="ssrBox" id="box48"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box49"></div></td>
+						<td><div class="ssrBox" id="box50"></div></td>
+						<td><div class="ssrBox" id="box51"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box52"></div></td>
+						<td><div class="ssrBox" id="box53"></div></td>
+						<td><div class="ssrBox" id="box54"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box55"></div></td>
+						<td><div class="ssrBox" id="box56"></div></td>
+						<td><div class="ssrBox" id="box57"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box58"></div></td>
+						<td><div class="ssrBox" id="box59"></div></td>
+						<td><div class="ssrBox" id="box60"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box61"></div></td>
+						<td><div class="ssrBox" id="box62"></div></td>
+						<td><div class="ssrBox" id="box63"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box64"></div></td>
+						<td><div class="ssrBox" id="box65"></div></td>
+						<td><div class="ssrBox" id="box66"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box67"></div></td>
+						<td><div class="ssrBox" id="box68"></div></td>
+						<td><div class="ssrBox" id="box69"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box70"></div></td>
+						<td><div class="ssrBox" id="box71"></div></td>
+						<td><div class="ssrBox" id="box72"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box73"></div></td>
+						<td><div class="ssrBox" id="box74"></div></td>
+						<td><div class="ssrBox" id="box75"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box76"></div></td>
+						<td><div class="ssrBox" id="box77"></div></td>
+						<td><div class="ssrBox" id="box78"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box79"></div></td>
+						<td><div class="ssrBox" id="box80"></div></td>
+						<td><div class="ssrBox" id="box81"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box82"></div></td>
+						<td><div class="ssrBox" id="box83"></div></td>
+						<td><div class="ssrBox" id="box84"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box85"></div></td>
+						<td><div class="ssrBox" id="box86"></div></td>
+						<td><div class="ssrBox" id="box87"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box88"></div></td>
+						<td><div class="ssrBox" id="box89"></div></td>
+						<td><div class="ssrBox" id="box90"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box91"></div></td>
+						<td><div class="ssrBox" id="box92"></div></td>
+						<td><div class="ssrBox" id="box93"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box94"></div></td>
+						<td><div class="ssrBox" id="box95"></div></td>
+						<td><div class="ssrBox" id="box96"></div></td>
+					</tr><tr>
+						<td><div class="ssrBox" id="box97"></div></td>
+						<td><div class="ssrBox" id="box98"></div></td>
+						<td><div class="ssrBox" id="box99"></div></td>
+					</tr></table>
+				
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-12">
+			<div class="languages">
+				<h2 class="cText">角色進度</h2>
+				<table border="0" class="characterCollection">
+			    <tr>
+			      <td><div class="blockitems" id="Rfire1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rfire2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rfire3" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rfire4" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rfire5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rfire6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rfire7" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rfire8" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+				  <td><div class="blockitems" id="Rfire9" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRfire4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRfire5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRfire8" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRfire1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRfire2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRfire3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRfire4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRfire5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRfire7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRlimited01" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rearth1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rearth2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rearth3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rearth4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rearth5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rearth6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rearth7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rearth8" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRearth1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRearth2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRearth3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRearth4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRearth5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRearth6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRearth7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRearth8" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRearth1" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRearth2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRearth3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRearth4" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRearth5" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRearth6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rwater1" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rwater2" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rwater3" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rwater4" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rwater5" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRwater1" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRwater2" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRwater3" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRwater4" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRwater5" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRwater6" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRwater1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRwater2" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRwater3" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRwater4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRwater5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRwater6" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRlimited02" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rwind1" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rwind2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rwind3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rwind4" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rwind5" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rwind6" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rwind7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRwind1" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRwind2" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRwind3" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRwind4" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRwind5" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRwind6" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRwind1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRwind2" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRwind3" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRwind4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRwind5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRwind6" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRwind7" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rlight1" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rlight2" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rlight3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rlight4" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRlight1" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRlight2" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRlight3" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRlight4" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRlight5" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRlight6" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRlight7" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRlight1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRlight2" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRlight3" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRlight4" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRlight5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRlight6" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRlight7" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="Rdark1" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="Rdark2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="Rdark3" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="Rdark4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRdark1" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SRdark2" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SRdark3" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SRdark4" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SRdark5" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRdark1" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRdark2" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="SSRdark3" ><img src="images/unknown.jpg" /></div></td>
+				  <td><div class="blockitems" id="SSRdark4" ><img src="images/unknown.jpg" /></div></td>
+		        </tr>
+				<tr>
+			      <td><div class="blockitems" id="SSRdark5" ><img src="images/unknown.jpg" /></div></td>
+			      <td><div class="blockitems" id="SSRdark6" ><img src="images/unknown.jpg" /></div></td>
+                  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
+				  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
+		        </tr>
+		      </table>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- contact and experience -->
+<section class="container">
+	<div class="row">
 		<div class="col-md-8 col-sm-12">
 			<div class="education">
 				<table><tr><td class="msgbox1" width="40%"><h2><div class="updateTitle">更新日誌</div></h2></td></tr></table>
+					<table><tr><td class="education-content" width="20%">
+                    	<h3>09/122/2015: v0.6</h3>
+                        <p>新增新角色Up抽卡選項<br />新增99SSR抽卡記錄<br />新增角色進度記錄</p></td></tr></table>
 					<table><tr><td class="education-content" width="20%">
                     	<h3>09/19/2015: v0.5</h3>
                         <p>新增屬性UP功能<br />有解放角色的武器會顯示對應的角色圈圈</p></td></tr></table>
@@ -129,16 +473,15 @@ var itemwidth;
                      <table><tr><td class="education-content" width="20%">
                     	<h3>09/14/2015: v0.1</h3>
                         <p>具備基本的單抽和十抽功能和課金累計</p></td></tr></table>
-                        <table><tr><td class="education-content" width="20%">
-                    	<h3>更新目標</h3>
+                    <table><tr><td class="education-content" width="20%">
+                    	<h3 style="margin-top:10%;">更新目標</h3>
 						<li>運氣與屬性比例記錄器</li>
                         <li>新增必SSR（一次）</li>
                         <li>新增6%</li>
                         <li>加強界面</li>
                         <li>增加期望值計算器</li>
-                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li><p></p></td></tr></table>
-                        
-					</div>
+                        <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li><p></p></td></tr>
+					</table>
 			</div>
 		</div>
 	</div>
