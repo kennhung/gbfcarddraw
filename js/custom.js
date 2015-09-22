@@ -1,13 +1,11 @@
 // templatemo 467 easy profile
 
-// PRELOADER
-
-$(window).load(function(){
-    $('.preloader').delay(1000).fadeOut("slow"); // set duration in brackets    
+$(window).one('backstretch.after', function (e, instance, index) {
+  $('.preloader').fadeOut('slow');
 });
 
 // HOME BACKGROUND SLIDESHOW
-$(function(){
+$(function(){   
     jQuery(document).ready(function() {
 		$('body').backstretch([
 	 		 "images/wallpaper.png", 
