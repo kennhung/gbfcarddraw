@@ -242,11 +242,33 @@ header hr {
      1px 1px 0 #000;
 }
 
+
+
 .cText {
 	text-shadow:-1px 1px 0 #000,  
     -1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
+}
+
+.numFont{
+	margin-left: 12%; 
+	margin-top: 5%;
+	margin-right: 8%; 
+	min-width:110px;
+	max-width:100%;
+	font-size:small; 
+	color:#FFF;
+}
+
+.numFont2{
+	margin-left: 20%; 
+	margin-top: 5%;
+	margin-right: 8%; 
+	min-width:50px;
+	max-width:100%;
+	font-size:small; 
+	color:#FFF;
 }
 
 .drawBtn1 {
@@ -306,9 +328,10 @@ header hr {
 }
 
 .classBG {
-	min-height:240px;
+	min-height:350px;
 	max-height:100%;
-	
+	background:url(../images/gacha_result_bg.png) no-repeat; 
+	background-size:100% 100%;
 }
 
 .contenttable {
@@ -320,6 +343,38 @@ header hr {
 	max-height:120px;
 	min-height:40px;
 }
+
+.statusTable {
+	background:url(../images/bg_detail.png) no-repeat; 
+	background-size:100% 100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:500px;
+	max-height:120px;
+	min-height:40px;
+}
+
+.statusTable p {
+	margin-bottom:3%;
+	margin-top:3%;
+	color:rgba(255,255,255,1);
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.statusTable input {
+	background-color:rgba(255,255,255,0);
+	border:hidden;
+	text-shadow:1px 1px 0 #000,  
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
 
 .contenttable2 {
 	background:url(../images/bg_gold.png) no-repeat; 

@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68143280-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 	<meta charset="utf-8">
-	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v0.6</title>
+	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v0.7</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Granblu Fantasy, Draw Card, Simulator, グランブルーファンタジー, グラブル, ガチャ, シミュレータ, エミュレータ">
@@ -42,7 +52,7 @@ var ssrGet = 1;
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv0.6<br />碧藍幻想抽卡模擬器v0.6</h1>
+				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv0.7<br />碧藍幻想抽卡模擬器v0.7</h1>
 				<h1 class="white bold shadow">by Wee張同學</h1>
 			</div>
 		</div>
@@ -52,9 +62,35 @@ var ssrGet = 1;
 <!-- about and skills section -->
 <section class="container">
 	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div id="cardBG" class="classBG">
-			  <table border="0" class="contenttable" style="margin-top:30%">
+		<div id="cardBG" class="col-md-6 col-sm-12">
+			<div class="classBG">
+			  <table border="0" class="statusTable" style="margin-top:10%">
+			    <tr>
+			      <td><form name="ssrNum"><div class="numFont"><p>SSR運氣值：<input type="text" name="Display" value="0" size="1" disabled><br />（<input type="text" name="Display2" value="0" size="3" disabled>%）</p></div></form></td>
+			      <td><form name="srNum"><div class="numFont"><p>SR運氣值：<input type="text" name="Display" value="0" size="1" disabled><br />（<input type="text" name="Display2" value="0" size="3" disabled>%）</p></div></form></td>
+			      <td><form name="rNum"><div class="numFont"><p>R運氣值：<input type="text" name="Display" value="0" size="1" disabled><br />（<input type="text" name="Display2" value="0" size="3" disabled>%）</p></div></form></td>
+		        </tr><!-- 
+				<tr>
+			      <td colspan="6"><div class="numFont"><p><b>所抽取的屬性比例</b></p></div></form></td>
+			    </tr>
+				<tr>
+			      <td colspan="3"><table><tr><td>
+					<form name="fireNum"><div class="numFont2"><p>火<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td><td><td>
+					<form name="earthNum"><div class="numFont2"><p>土<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td><td><td>
+					<form name="waterNum"><div class="numFont2"><p>水<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td><td><td>
+					<form name="windNum"><div class="numFont2"><p>風<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td><td>
+					<form name="lightNum"><div class="numFont2"><p>光<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td><td colspan="2">
+					<form name="darkNum"><div class="numFont2"><p>闇<input type="text" name="Display" value="0" size="1" disabled><br />&nbsp;</p></div></form>
+				  </td>
+				  </tr></table></td>
+			    </tr> -->
+		      </table>
+			  <table border="0" class="contenttable">
 			    <tr>
 			      <td><div style="position: relative; margin-top:20px" class="blockitems2" id="item1" ></div></td>
 			      <td><div style="position: relative; margin-top:20px" class="blockitems2" id="item2" ></div></td>
@@ -103,6 +139,7 @@ var ssrGet = 1;
 						<option value="6">光闇UP</option>
 						<option value="7">星晶獸UP</option>
 						<option value="8">終解UP</option>
+						<option value="9">6% (キャラUP)</option>
 					</select>
 					</p>
             </td><td style="width:12%" rowspan="2"></td></tr>
@@ -456,6 +493,9 @@ var ssrGet = 1;
 			<div class="education">
 				<table><tr><td class="msgbox1" width="40%"><h2><div class="updateTitle">更新日誌</div></h2></td></tr></table>
 					<table><tr><td class="education-content" width="20%">
+                    	<h3>09/27/2015: v0.7</h3>
+                        <p>新增運氣值計算器<br />新增6%(角色UP)選項</p></td></tr></table>
+					<table><tr><td class="education-content" width="20%">
                     	<h3>09/22/2015: v0.6</h3>
                         <p>新增新角色Up抽卡選項<br />新增99SSR抽卡記錄<br />新增角色進度記錄</p></td></tr></table>
 					<table><tr><td class="education-content" width="20%">
@@ -475,9 +515,8 @@ var ssrGet = 1;
                         <p>具備基本的單抽和十抽功能和課金累計</p></td></tr></table>
                     <table><tr><td class="education-content" width="20%">
                     	<h3 style="margin-top:10%;">更新目標</h3>
-						<li>運氣與屬性比例記錄器</li>
+						<li>屬性比例記錄器</li>
                         <li>新增必SSR（一次）</li>
-                        <li>新增6%</li>
                         <li>加強界面</li>
                         <li>增加期望值計算器</li>
                         <li>捐款給作者的功能與刷卡才可使用模擬器的功能（大誤）</li><p></p></td></tr>

@@ -19,4 +19,4 @@ $(function(){
 		});
 })
 
-$("#cardBG").backstretch("images/gacha_result_bg.png");
+
