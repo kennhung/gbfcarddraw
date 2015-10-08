@@ -311,16 +311,52 @@ header hr {
 	
 }
 
-#drawBtn2 img {
-    width:100%;
+#drawBtn3 {
+    max-width:150px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	min-height:80px;
+	vertical-align:top;
+	border: none;
+	background:url(../images/singledraw1.png);
+	background-size:100% 100%;
+}
+
+#drawBtn3 img {
+    border: none;
+	width: 100%;
+	margin-right:auto;
 	margin-bottom:10%;
 	margin-top:10%;
 }
 
-#drawBtn2:active {
+#drawBtn3:active {
 	border: none;
-    background:url(../images/tendraw2.png);
+    background:url(../images/singledraw2.png);
 	background-size:100% 100%;
+}
+
+#drawBtn3dis {
+    max-width:150px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:5%;
+	min-height:80px;
+	vertical-align:top;
+	border: none;
+	background:url(../images/disabledraw.png);
+	background-size:100% 100%;
+}
+
+#drawBtn3dis img {
+    border: none;
+	width: 100%;
+	margin-right:auto;
+	margin-bottom:10%;
+	margin-top:10%;
 }
 
 .updateTitle {
@@ -375,6 +411,36 @@ header hr {
      1px 1px 0 #000;
 }
 
+.resultTable {
+	background:url(../images/bg_detail.png) no-repeat; 
+	background-size:100% 100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:500px;
+	min-height:230px;
+}
+
+.resultTable p {
+	margin-bottom:3%;
+	margin-top:3%;
+	color:rgba(255,255,255,1);
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.resultTable input {
+	background-color:rgba(255,255,255,0);
+	border:hidden;
+	text-shadow:1px 1px 0 #000,  
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
 
 .contenttable2 {
 	background:url(../images/bg_gold.png) no-repeat; 
@@ -405,6 +471,9 @@ header hr {
 #cotentbanner {
 	margin-top:20%;
 }
+#cotentbanner2 {
+	margin-top:30%;
+}
 
 .blockitems {
 	margin: 5px 5px;
@@ -421,6 +490,13 @@ header hr {
 	max-width:95px;
 }
 
+.calcItems {
+	margin: 2px 2px;
+}
+.calcItems img {
+	max-width:98%;
+}
+
 
 .overlayImage2 {
   position: absolute;
@@ -428,7 +504,12 @@ header hr {
   bottom: 0;
   width:40%;
 }
-
+.overlayBlue {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width:100%;
+}
 
 
 /* skills section */
@@ -509,6 +590,22 @@ header hr {
 }
 .languages ul li {
   padding-bottom: 6px;
+}
+
+.messages {
+  background:rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+}
+
+.messages p {
+	margin-bottom:3%;
+	margin-top:3%;
+	font-size:small;
+	color:rgba(255,255,255,1);
+	text-shadow:-1px 1px 0 #000,  
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 /* contact section */
