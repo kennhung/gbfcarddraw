@@ -5,73 +5,48 @@ function arrangement(){
 }
 
 function calculation(){
-	var f = document.getElementById("slt_dMethod2");
-	var elementUp2 = f.options[f.selectedIndex].value;
+	var f = document.getElementById("slt_dMethod");
+	var elementUp = f.options[f.selectedIndex].value;
 	
-	if (elementUp2 == 1){
+	if (elementUp == 1){
 		var upSelected = 0;
-		for (var x=1; x<25; x++){
-			if (svar[x] == 1){
-				upSelected++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (avar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				upSelected++;
 			}
 		}
 		
 		var selectedvar = 0;
-		for (var x=1; x<15; x++){
+		for (var x=1; x<18; x++){
 			if (wvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
 			if (ivar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (kvar[x] == 1){
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (bvar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (nvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (gvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<13; x++){
-			if (pvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<13; x++){
-			if (xvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<48; x++){
-			if (mvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		var ans = (1.5 / 32 * upSelected) + (1.5 / 133 * selectedvar);
-		var ansRB = (50 / 32 * upSelected) + (50 / 133 * selectedvar);
+		var ans = (1.5 / 16 * upSelected) + (1.5 / 76 * selectedvar);
+		var ansRB = (50 / 16 * upSelected) + (50 / 76 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
-		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是火Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -79,72 +54,90 @@ function calculation(){
 		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
 	}
-	else if (elementUp2 == 2){
+	else if (elementUp == 2){
 		var upSelected = 0;
-		for (var x=1; x<15; x++){
+		for (var x=1; x<18; x++){
 			if (wvar[x] == 1){
 				upSelected++;
 			}
 		}
-		for (var x=1; x<9; x++){
+		
+		var selectedvar = 0;
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
 			if (ivar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		var ans = (1.5 / 17 * upSelected) + (1.5 / 75 * selectedvar);
+		var ansRB = (50 / 17 * upSelected) + (50 / 75 * selectedvar);
+		var drawAns = 100 / ans;
+		var drawAnsRB = 100 / ansRB;
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是水Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
+		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
+		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
+		+ drawAnsRB + '"  disabled>次或之前的彩虹就可以抽到目標。<br />反之運氣差的話可能要抽<input type="text" name="Display" size="4" value="' 
+		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
+		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
+	}else if (elementUp == 3){
+		var upSelected = 0;
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
 				upSelected++;
 			}
 		}
 		
-		
 		var selectedvar = 0;
-		for (var x=1; x<25; x++){
-			if (svar[x] == 1){
+		for (var x=1; x<18; x++){
+			if (wvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
-			if (avar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (kvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (ivar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (bvar[x] == 1){
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (nvar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
-			if (gvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<13; x++){
-			if (pvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<13; x++){
-			if (xvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<48; x++){
-			if (mvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		
-		var ans = (1.5 / 22 * upSelected) + (1.5 / 143 * selectedvar);
-		var ansRB = (50 / 22 * upSelected) + (50 / 143 * selectedvar);
+		var ans = (1.5 / 14 * upSelected) + (1.5 / 78 * selectedvar);
+		var ansRB = (50 / 14 * upSelected) + (50 / 78 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
-		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是土Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -152,71 +145,45 @@ function calculation(){
 		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
 	}
-	else if (elementUp2 == 3){
+	else if (elementUp == 4){
 		var upSelected = 0;
-		for (var x=1; x<11; x++){
-			if (kvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (ivar[x] == 1){
 				upSelected++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (bvar[x] == 1){
-				upSelected++;
-			}
-		}
-		
 		
 		var selectedvar = 0;
-		for (var x=1; x<25; x++){
-			if (svar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (avar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<15; x++){
+		for (var x=1; x<18; x++){
 			if (wvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
-			if (ivar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (nvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
-			if (gvar[x] == 1){
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (pvar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (xvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<48; x++){
-			if (mvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		var ans = (1.5 / 20 * upSelected) + (1.5 / 145 * selectedvar);
-		var ansRB = (50 / 20 * upSelected) + (50 / 145 * selectedvar);
+		var ans = (1.5 / 16 * upSelected) + (1.5 / 76 * selectedvar);
+		var ansRB = (50 / 16 * upSelected) + (50 / 76 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
-		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是風Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -224,72 +191,45 @@ function calculation(){
 		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
 	}
-	else if (elementUp2 == 4){
+	else if (elementUp == 5){
 		var upSelected = 0;
-		for (var x=1; x<13; x++){
-			if (nvar[x] == 1){
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
 				upSelected++;
 			}
 		}
-		for (var x=1; x<9; x++){
-			if (gvar[x] == 1){
-				upSelected++;
-			}
-		}
-		
 		
 		var selectedvar = 0;
-		for (var x=1; x<25; x++){
-			if (svar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (avar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<15; x++){
+		for (var x=1; x<18; x++){
 			if (wvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
 			if (ivar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (kvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (bvar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		
-		for (var x=1; x<13; x++){
-			if (pvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<13; x++){
-			if (xvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<48; x++){
-			if (mvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		var ans = (1.5 / 20 * upSelected) + (1.5 / 145 * selectedvar);
-		var ansRB = (50 / 20 * upSelected) + (50 / 145 * selectedvar);
+		var ans = (1.5 / 15 * upSelected) + (1.5 / 77 * selectedvar);
+		var ansRB = (50 / 15 * upSelected) + (50 / 77 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
-		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是光Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -297,71 +237,96 @@ function calculation(){
 		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
 	}
-	else if (elementUp2 == 5){
+	else if (elementUp == 6){
 		var upSelected = 0;
-		for (var x=1; x<13; x++){
-			if (pvar[x] == 1){
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
 				upSelected++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (xvar[x] == 1){
-				upSelected++;
-			}
-		}
-		
 		
 		var selectedvar = 0;
-		for (var x=1; x<25; x++){
-			if (svar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (avar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<15; x++){
+		for (var x=1; x<18; x++){
 			if (wvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<9; x++){
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
 			if (ivar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (kvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<11; x++){
-			if (bvar[x] == 1){
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<13; x++){
-			if (nvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<9; x++){
-			if (gvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		for (var x=1; x<48; x++){
-			if (mvar[x] == 1){
-				selectedvar++;
-			}
-		}
-		var ans = (1.5 / 24 * upSelected) + (1.5 / 145 * selectedvar);
-		var ansRB = (50 / 24 * upSelected) + (50 / 145 * selectedvar);
+		var ans = (1.5 / 14 * upSelected) + (1.5 / 78 * selectedvar);
+		var ansRB = (50 / 14 * upSelected) + (50 / 78 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
-		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是闇Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
+		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
+		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
+		+ drawAnsRB + '"  disabled>次或之前的彩虹就可以抽到目標。<br />反之運氣差的話可能要抽<input type="text" name="Display" size="4" value="' 
+		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
+		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
+	}
+	else if (elementUp == 7){
+		var upSelected = 0;
+		
+		var selectedvar = 0;
+		for (var x=1; x<18; x++){
+			if (fvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<18; x++){
+			if (wvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<15; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
+			if (ivar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<15; x++){
+			if (dvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<5; x++){
+			if (limitedvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		var ans = (6 / 96 * selectedvar);
+		var ansRB = (100 / 96 * selectedvar);
+		var drawAns = 100 / ans;
+		var drawAnsRB = 100 / ansRB;
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是6%卡包，目前6%幾率計算並不是真正的"角色Up"幾率，"角色Up6%"的正確幾率還在研發中</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -370,633 +335,811 @@ function calculation(){
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
 	}
 	else {
-	document.getElementById('calcResult').innerHTML = '<p class="cText">請重新選擇武器up的種類</p>';
+	document.getElementById('calcResult').innerHTML = '<p class="cText">請重新選擇屬性up的種類</p>';
 	}
 }
 
 
-//sword click
-function s1click(){
-	if (svar[1] == 1){
-		document.getElementById('s1').innerHTML = '<img src="SSR/s1.jpg" /><img class="overlayImage2" src="characters/SSR/w1.png"/>';
-		svar[1] = 0;
-		svar[2] = 0;
+//fire click
+function f1click(){
+	if (fvar[1] == 1){
+		document.getElementById('f1').innerHTML = '<img src="SSR/Fire/1.jpg" />';
+		fvar[1] = 0;
 	} else {
-		document.getElementById('s1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		svar[1] = 1;
-		svar[2] = 1;
+		document.getElementById('f1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[1] = 1;
 	}
 }
 
-function s3click(){
-	if (svar[3] == 1){
-		document.getElementById('s3').innerHTML = '<img src="SSR/s3.jpg" /><img class="overlayImage2" src="characters/SSR/f1.png"/>';
-		svar[3] = 0;
-		svar[4] = 0;
+function f2click(){
+	if (fvar[2] == 1){
+		document.getElementById('f2').innerHTML = '<img src="SSR/Fire/2.jpg" />';
+		fvar[2] = 0;
 	} else {
-		document.getElementById('s3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[3] = 1;
-		svar[4] = 1;
+		document.getElementById('f2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[2] = 1;
 	}
 }
 
-function s5click(){
-	if (svar[5] == 1){
-		document.getElementById('s5').innerHTML = '<img src="SSR/s5.jpg" />';
-		svar[5] = 0;
-		svar[6] = 0;
+function f3click(){
+	if (fvar[3] == 1){
+		document.getElementById('f3').innerHTML = '<img src="SSR/Fire/3.jpg" />';
+		fvar[3] = 0;
 	} else {
-		document.getElementById('s5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[5] = 1;
-		svar[6] = 1;
+		document.getElementById('f3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[3] = 1;
 	}
 }
 
-function s7click(){
-	if (svar[7] == 1){
-		document.getElementById('s7').innerHTML = '<img src="SSR/s7.jpg" /><img class="overlayImage2" src="characters/SSR/w5.png"/>';
-		svar[7] = 0;
-		svar[8] = 0;
+function f4click(){
+	if (fvar[4] == 1){
+		document.getElementById('f4').innerHTML = '<img src="SSR/Fire/4.jpg" /><img class="overlayImage2" src="characters/SSR/f4.png"/>';
+		fvar[4] = 0;
 	} else {
-		document.getElementById('s7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[7] = 1;
-		svar[8] = 1;
+		document.getElementById('f4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[4] = 1;
 	}
 }
 
-function s9click(){
-	if (svar[9] == 1){
-		document.getElementById('s9').innerHTML = '<img src="SSR/s9.jpg" /><img class="overlayImage2" src="characters/SSR/e2.png"/>';
-		svar[9] = 0;
-		svar[10] = 0;
+function f5click(){
+	if (fvar[5] == 1){
+		document.getElementById('f5').innerHTML = '<img src="SSR/Fire/5.jpg" />';
+		fvar[5] = 0;
 	} else {
-		document.getElementById('s9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[9] = 1;
-		svar[10] = 1;
+		document.getElementById('f5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[5] = 1;
 	}
 }
 
-function s11click(){
-	if (svar[11] == 1){
-		document.getElementById('s11').innerHTML = '<img src="SSR/s11.jpg" /><img class="overlayImage2" src="characters/SSR/e1.png"/>';
-		svar[11] = 0;
-		svar[12] = 0;
+function f6click(){
+	if (fvar[6] == 1){
+		document.getElementById('f6').innerHTML = '<img src="SSR/Fire/6.jpg" /><img class="overlayImage2" src="characters/SSR/f7.png"/>';
+		fvar[6] = 0;
 	} else {
-		document.getElementById('s11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[11] = 1;
-		svar[12] = 1;
+		document.getElementById('f6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[6] = 1;
 	}
 }
 
-function s13click(){
-	if (svar[13] == 1){
-		document.getElementById('s13').innerHTML = '<img src="SSR/s13.jpg" />';
-		svar[13] = 0;
-		svar[14] = 0;
+function f7click(){
+	if (fvar[7] == 1){
+		document.getElementById('f7').innerHTML = '<img src="SSR/Fire/7.jpg" /><img class="overlayImage2" src="characters/SSR/f6.png"/>';
+		fvar[7] = 0;
 	} else {
-		document.getElementById('s13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[13] = 1;
-		svar[14] = 1;
+		document.getElementById('f7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[7] = 1;
 	}
 }
 
-function s15click(){
-	if (svar[15] == 1){
-		document.getElementById('s15').innerHTML = '<img src="SSR/s15.jpg" /><img class="overlayImage2" src="characters/SSR/l4.png"/>';
-		svar[15] = 0;
-		svar[16] = 0;
+function f8click(){
+	if (fvar[8] == 1){
+		document.getElementById('f8').innerHTML = '<img src="SSR/Fire/8.jpg" /><img class="overlayImage2" src="characters/SSR/f3.png"/>';
+		fvar[8] = 0;
 	} else {
-		document.getElementById('s15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[15] = 1;
-		svar[16] = 1;
+		document.getElementById('f8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[8] = 1;
 	}
 }
 
-function s17click(){
-	if (svar[17] == 1){
-		document.getElementById('s17').innerHTML = '<img src="SSR/s17.jpg" /><img class="overlayImage2" src="characters/SSR/l1.png"/>';
-		svar[17] = 0;
-		svar[18] = 0;
+function f9click(){
+	if (fvar[9] == 1){
+		document.getElementById('f9').innerHTML = '<img src="SSR/Fire/9.jpg" /><img class="overlayImage2" src="characters/SSR/f1.png"/>';
+		fvar[9] = 0;
 	} else {
-		document.getElementById('s17').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[17] = 1;
-		svar[18] = 1;
+		document.getElementById('f9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[9] = 1;
 	}
 }
 
-function s19click(){
-	if (svar[19] == 1){
-		document.getElementById('s19').innerHTML = '<img src="SSR/s19.jpg" /><img class="overlayImage2" src="characters/SSR/l6.png"/>';
-		svar[19] = 0;
-		svar[20] = 0;
+function f10click(){
+	if (fvar[10] == 1){
+		document.getElementById('f10').innerHTML = '<img src="SSR/Fire/10.jpg" /><img class="overlayImage2" src="characters/SSR/f2.png"/>';
+		fvar[10] = 0;
 	} else {
-		document.getElementById('s19').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[19] = 1;
-		svar[20] = 1;
+		document.getElementById('f10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[10] = 1;
 	}
 }
 
-function s21click(){
-	if (svar[21] == 1){
-		document.getElementById('s21').innerHTML = '<img src="SSR/s21.jpg" /><img class="overlayImage2" src="characters/SSR/d4.png"/>';
-		svar[21] = 0;
-		svar[22] = 0;
+function f11click(){
+	if (fvar[11] == 1){
+		document.getElementById('f11').innerHTML = '<img src="SSR/Fire/11.jpg" /><img class="overlayImage2" src="characters/SSR/f5.png"/>';
+		fvar[11] = 0;
 	} else {
-		document.getElementById('s21').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[21] = 1;
-		svar[22] = 1;
+		document.getElementById('f11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[11] = 1;
 	}
 }
 
-function s23click(){
-	if (svar[23] == 1){
-		document.getElementById('s23').innerHTML = '<img src="SSR/s23.jpg" /><img class="overlayImage2" src="characters/SSR/d2.png"/>';
-		svar[23] = 0;
-		svar[24] = 0;
+function f12click(){
+	if (fvar[12] == 1){
+		document.getElementById('f12').innerHTML = '<img src="SSR/Fire/12.jpg" /><img class="overlayImage2" src="characters/SSR/f8.png"/>';
+		fvar[12] = 0;
 	} else {
-		document.getElementById('s23').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		svar[23] = 1;
-		svar[24] = 1;
+		document.getElementById('f12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[12] = 1;
 	}
 }
 
-
-
-
-
-
-//katana click
-function a1click(){
-	if (avar[1] == 1){
-		document.getElementById('a1').innerHTML = '<img src="SSR/a1.jpg" />';
-		avar[1] = 0;
-		avar[2] = 0;
+function f13click(){
+	if (fvar[13] == 1){
+		document.getElementById('f13').innerHTML = '<img src="SSR/Fire/13.jpg" />';
+		fvar[13] = 0;
 	} else {
-		document.getElementById('a1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		avar[1] = 1;
-		avar[2] = 1;
+		document.getElementById('f13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[13] = 1;
 	}
 }
-function a3click(){
-	if (avar[3] == 1){
-		document.getElementById('a3').innerHTML = '<img src="SSR/a3.jpg" />';
-		avar[3] = 0;
-		avar[4] = 0;
+
+function f14click(){
+	if (fvar[14] == 1){
+		document.getElementById('f14').innerHTML = '<img src="SSR/Fire/14.jpg" />';
+		fvar[14] = 0;
 	} else {
-		document.getElementById('a3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		avar[3] = 1;
-		avar[4] = 1;
+		document.getElementById('f14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[14] = 1;
 	}
 }
-function a5click(){
-	if (avar[5] == 1){
-		document.getElementById('a5').innerHTML = '<img src="SSR/a5.jpg" />';
-		avar[5] = 0;
-		avar[6] = 0;
+
+function f15click(){
+	if (fvar[15] == 1){
+		document.getElementById('f15').innerHTML = '<img src="SSR/Fire/15.jpg" />';
+		fvar[15] = 0;
 	} else {
-		document.getElementById('a5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		avar[5] = 1;
-		avar[6] = 1;
+		document.getElementById('f15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[15] = 1;
 	}
 }
-function a7click(){
-	if (avar[7] == 1){
-		document.getElementById('a7').innerHTML = '<img src="SSR/a7.jpg" /><img class="overlayImage2" src="characters/SSR/l7.png"/>';
-		avar[7] = 0;
-		avar[8] = 0;
+
+function f16click(){
+	if (fvar[16] == 1){
+		document.getElementById('f16').innerHTML = '<img src="SSR/Fire/16.jpg" />';
+		fvar[16] = 0;
 	} else {
-		document.getElementById('a7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		avar[7] = 1;
-		avar[8] = 1;
+		document.getElementById('f16').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[16] = 1;
 	}
 }
 
 
 
 
-//wand click
+
+
+
+//water click
 function w1click(){
 	if (wvar[1] == 1){
-		document.getElementById('w1').innerHTML = '<img src="SSR/w1.jpg" /><img class="overlayImage2" src="characters/SSR/f2.png"/>';
+		document.getElementById('w1').innerHTML = '<img src="SSR/Water/1.jpg" />';
 		wvar[1] = 0;
-		wvar[2] = 0;
 	} else {
 		document.getElementById('w1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[1] = 1;
+	}
+}
+
+function w2click(){
+	if (wvar[2] == 1){
+		document.getElementById('w2').innerHTML = '<img src="SSR/Water/2.jpg" />';
+		wvar[2] = 0;
+	} else {
+		document.getElementById('w2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[2] = 1;
 	}
 }
 
 function w3click(){
 	if (wvar[3] == 1){
-		document.getElementById('w3').innerHTML = '<img src="SSR/w3.jpg" /><img class="overlayImage2" src="characters/SSR/w3.png"/>';
+		document.getElementById('w3').innerHTML = '<img src="SSR/Water/3.jpg" /><img class="overlayImage2" src="characters/SSR/w4.png"/>';
 		wvar[3] = 0;
-		wvar[4] = 0;
 	} else {
 		document.getElementById('w3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[3] = 1;
+	}
+}
+
+function w4click(){
+	if (wvar[4] == 1){
+		document.getElementById('w4').innerHTML = '<img src="SSR/Water/4.jpg" /><img class="overlayImage2" src="characters/SSR/w6.png"/>';
+		wvar[4] = 0;
+	} else {
+		document.getElementById('w4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[4] = 1;
 	}
 }
 
 function w5click(){
 	if (wvar[5] == 1){
-		document.getElementById('w5').innerHTML = '<img src="SSR/w5.jpg" /><img class="overlayImage2" src="characters/SSR/e3.png"/>';
-		avar[5] = 0;
-		avar[6] = 0;
+		document.getElementById('w5').innerHTML = '<img src="SSR/Water/5.jpg" /><img class="overlayImage2" src="characters/SSR/w2.png"/>';
+		wvar[5] = 0;
 	} else {
 		document.getElementById('w5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[5] = 1;
+	}
+}
+
+function w6click(){
+	if (wvar[6] == 1){
+		document.getElementById('w6').innerHTML = '<img src="SSR/Water/6.jpg" /><img class="overlayImage2" src="characters/SSR/w1.png"/>';
+		wvar[6] = 0;
+	} else {
+		document.getElementById('w6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[6] = 1;
 	}
 }
 
 function w7click(){
 	if (wvar[7] == 1){
-		document.getElementById('w7').innerHTML = '<img src="SSR/w7.jpg" /><img class="overlayImage2" src="characters/SSR/l2.png"/>';
+		document.getElementById('w7').innerHTML = '<img src="SSR/Water/7.jpg" />';
 		wvar[7] = 0;
-		wvar[8] = 0;
 	} else {
 		document.getElementById('w7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[7] = 1;
+	}
+}
+
+function w8click(){
+	if (wvar[8] == 1){
+		document.getElementById('w8').innerHTML = '<img src="SSR/Water/8.jpg" /><img class="overlayImage2" src="characters/SSR/w5.png"/>';
+		wvar[8] = 0;
+	} else {
+		document.getElementById('w8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[8] = 1;
 	}
 }
 
 function w9click(){
 	if (wvar[9] == 1){
-		document.getElementById('w9').innerHTML = '<img src="SSR/w9.jpg" />';
+		document.getElementById('w9').innerHTML = '<img src="SSR/Water/9.jpg" /><img class="overlayImage2" src="characters/SSR/w3.png"/>';
 		wvar[9] = 0;
-		wvar[10] = 0;
 	} else {
 		document.getElementById('w9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[9] = 1;
+	}
+}
+
+function w10click(){
+	if (wvar[10] == 1){
+		document.getElementById('w10').innerHTML = '<img src="SSR/Water/10.jpg" />';
+		wvar[10] = 0;
+	} else {
+		document.getElementById('w10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[10] = 1;
 	}
 }
 
 function w11click(){
 	if (wvar[11] == 1){
-		document.getElementById('w11').innerHTML = '<img src="SSR/w11.jpg" /><img class="overlayImage2" src="characters/SSR/l5.png"/>';
+		document.getElementById('w11').innerHTML = '<img src="SSR/Water/11.jpg" /><img class="overlayImage2" src="characters/SSR/w7.png"/>';
 		wvar[11] = 0;
-		wvar[12] = 0;
 	} else {
 		document.getElementById('w11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[11] = 1;
+	}
+}
+
+function w12click(){
+	if (wvar[12] == 1){
+		document.getElementById('w12').innerHTML = '<img src="SSR/Water/12.jpg" /><img class="overlayImage2" src="characters/SSR/w8.png"/>';
+		wvar[12] = 0;
+	} else {
+		document.getElementById('w12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[12] = 1;
 	}
 }
 
 function w13click(){
 	if (wvar[13] == 1){
-		document.getElementById('w13').innerHTML = '<img src="SSR/w13.jpg" /><img class="overlayImage2" src="characters/SSR/d3.png"/>';
+		document.getElementById('w13').innerHTML = '<img src="SSR/Water/13.jpg" />';
 		wvar[13] = 0;
-		wvar[14] = 0;
 	} else {
 		document.getElementById('w13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		wvar[13] = 1;
+	}
+}
+
+function w14click(){
+	if (wvar[14] == 1){
+		document.getElementById('w14').innerHTML = '<img src="SSR/Water/14.jpg" />';
+		wvar[14] = 0;
+	} else {
+		document.getElementById('w14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		wvar[14] = 1;
+	}
+}
+
+function w15click(){
+	if (wvar[15] == 1){
+		document.getElementById('w15').innerHTML = '<img src="SSR/Water/15.jpg" />';
+		wvar[15] = 0;
+	} else {
+		document.getElementById('w15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		wvar[15] = 1;
+	}
+}
+
+function w16click(){
+	if (wvar[16] == 1){
+		document.getElementById('w16').innerHTML = '<img src="SSR/Water/16.jpg" />';
+		wvar[16] = 0;
+	} else {
+		document.getElementById('w16').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		wvar[16] = 1;
+	}
+}
+
+function w17click(){
+	if (wvar[17] == 1){
+		document.getElementById('w17').innerHTML = '<img src="SSR/Water/17.jpg" />';
+		wvar[17] = 0;
+	} else {
+		document.getElementById('w17').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		wvar[17] = 1;
 	}
 }
 
 
 
 
-//instrument click
+
+
+
+
+//earth click
+function e1click(){
+	if (evar[1] == 1){
+		document.getElementById('e1').innerHTML = '<img src="SSR/Earth/1.jpg" />';
+		evar[1] = 0;
+	} else {
+		document.getElementById('e1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[1] = 1;
+	}
+}
+
+function e2click(){
+	if (evar[2] == 1){
+		document.getElementById('e2').innerHTML = '<img src="SSR/Earth/2.jpg" />';
+		evar[2] = 0;
+	} else {
+		document.getElementById('e2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[2] = 1;
+	}
+}
+
+function e3click(){
+	if (evar[3] == 1){
+		document.getElementById('e3').innerHTML = '<img src="SSR/Earth/3.jpg" /><img class="overlayImage2" src="characters/SSR/e4.png"/>';
+		evar[3] = 0;
+	} else {
+		document.getElementById('e3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[3] = 1;
+	}
+}
+
+function e4click(){
+	if (evar[4] == 1){
+		document.getElementById('e4').innerHTML = '<img src="SSR/Earth/4.jpg" />';
+		evar[4] = 0;
+	} else {
+		document.getElementById('e4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[4] = 1;
+	}
+}
+
+function e5click(){
+	if (evar[5] == 1){
+		document.getElementById('e5').innerHTML = '<img src="SSR/Earth/5.jpg" /><img class="overlayImage2" src="characters/SSR/e6.png"/>';
+		evar[5] = 0;
+	} else {
+		document.getElementById('e5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[5] = 1;
+	}
+}
+
+function e6click(){
+	if (evar[6] == 1){
+		document.getElementById('e6').innerHTML = '<img src="SSR/Earth/6.jpg" /><img class="overlayImage2" src="characters/SSR/e2.png"/>';
+		evar[6] = 0;
+	} else {
+		document.getElementById('e6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[6] = 1;
+	}
+}
+
+function e7click(){
+	if (evar[7] == 1){
+		document.getElementById('e7').innerHTML = '<img src="SSR/Earth/7.jpg" /><img class="overlayImage2" src="characters/SSR/e1.png"/>';
+		evar[7] = 0;
+	} else {
+		document.getElementById('e7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[7] = 1;
+	}
+}
+
+function e8click(){
+	if (evar[8] == 1){
+		document.getElementById('e8').innerHTML = '<img src="SSR/Earth/8.jpg" /><img class="overlayImage2" src="characters/SSR/e3.png"/>';
+		evar[8] = 0;
+	} else {
+		document.getElementById('e8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[8] = 1;
+	}
+}
+
+function e9click(){
+	if (evar[9] == 1){
+		document.getElementById('e9').innerHTML = '<img src="SSR/Earth/9.jpg" />';
+		evar[9] = 0;
+	} else {
+		document.getElementById('e9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[9] = 1;
+	}
+}
+
+function e10click(){
+	if (evar[10] == 1){
+		document.getElementById('e10').innerHTML = '<img src="SSR/Earth/10.jpg" /><img class="overlayImage2" src="characters/SSR/e5.png"/>';
+		evar[10] = 0;
+	} else {
+		document.getElementById('e10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[10] = 1;
+	}
+}
+
+function e11click(){
+	if (evar[11] == 1){
+		document.getElementById('e11').innerHTML = '<img src="SSR/Earth/11.jpg" />';
+		evar[11] = 0;
+	} else {
+		document.getElementById('e11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[11] = 1;
+	}
+}
+
+function e12click(){
+	if (evar[12] == 1){
+		document.getElementById('e12').innerHTML = '<img src="SSR/Earth/12.jpg" />';
+		evar[12] = 0;
+	} else {
+		document.getElementById('e12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[12] = 1;
+	}
+}
+
+function e13click(){
+	if (evar[13] == 1){
+		document.getElementById('e13').innerHTML = '<img src="SSR/Earth/13.jpg" />';
+		evar[13] = 0;
+	} else {
+		document.getElementById('e13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[13] = 1;
+	}
+}
+
+function e14click(){
+	if (evar[14] == 1){
+		document.getElementById('e14').innerHTML = '<img src="SSR/Earth/14.jpg" />';
+		evar[14] = 0;
+	} else {
+		document.getElementById('e14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		evar[14] = 1;
+	}
+}
+
+
+
+
+//Wind click
 function i1click(){
 	if (ivar[1] == 1){
-		document.getElementById('i1').innerHTML = '<img src="SSR/i1.jpg" /><img class="overlayImage2" src="characters/SSR/f4.png"/>';
+		document.getElementById('i1').innerHTML = '<img src="SSR/Wind/1.jpg" />';
 		ivar[1] = 0;
-		ivar[2] = 0;
 	} else {
 		document.getElementById('i1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		ivar[1] = 1;
+	}
+}
+
+function i2click(){
+	if (ivar[2] == 1){
+		document.getElementById('i2').innerHTML = '<img src="SSR/Wind/2.jpg" />';
+		ivar[2] = 0;
+	} else {
+		document.getElementById('i2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		ivar[2] = 1;
 	}
 }
 
 function i3click(){
 	if (ivar[3] == 1){
-		document.getElementById('i3').innerHTML = '<img src="SSR/i3.jpg" /><img class="overlayImage2" src="characters/SSR/l3.png"/>';
+		document.getElementById('i3').innerHTML = '<img src="SSR/Wind/3.jpg" /><img class="overlayImage2" src="characters/SSR/i5.png"/>';
 		ivar[3] = 0;
-		ivar[4] = 0;
 	} else {
 		document.getElementById('i3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		ivar[3] = 1;
+	}
+}
+
+function i4click(){
+	if (ivar[4] == 1){
+		document.getElementById('i4').innerHTML = '<img src="SSR/Wind/4.jpg" /><img class="overlayImage2" src="characters/SSR/i3.png"/>';
+		ivar[4] = 0;
+	} else {
+		document.getElementById('i4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		ivar[4] = 1;
 	}
 }
 
 function i5click(){
 	if (ivar[5] == 1){
-		document.getElementById('i5').innerHTML = '<img src="SSR/i5.jpg" /><img class="overlayImage2" src="characters/SSR/e4.png"/>';
+		document.getElementById('i5').innerHTML = '<img src="SSR/Wind/5.jpg" /><img class="overlayImage2" src="characters/SSR/i4.png"/>';
 		ivar[5] = 0;
-		ivar[6] = 0;
 	} else {
 		document.getElementById('i5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		ivar[5] = 1;
+	}
+}
+
+function i6click(){
+	if (ivar[6] == 1){
+		document.getElementById('i6').innerHTML = '<img src="SSR/Wind/6.jpg" /><img class="overlayImage2" src="characters/SSR/i1.png"/>';
+		ivar[6] = 0;
+	} else {
+		document.getElementById('i6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		ivar[6] = 1;
 	}
 }
 
 function i7click(){
 	if (ivar[7] == 1){
-		document.getElementById('i7').innerHTML = '<img src="SSR/i7.jpg" /><img class="overlayImage2" src="characters/SSR/i7.png"/>';
+		document.getElementById('i7').innerHTML = '<img src="SSR/Wind/7.jpg" /><img class="overlayImage2" src="characters/SSR/i6.png"/>';
 		ivar[7] = 0;
-		ivar[8] = 0;
 	} else {
 		document.getElementById('i7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
 		ivar[7] = 1;
+	}
+}
+
+function i8click(){
+	if (ivar[8] == 1){
+		document.getElementById('i8').innerHTML = '<img src="SSR/Wind/8.jpg" />';
+		ivar[8] = 0;
+	} else {
+		document.getElementById('i8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		ivar[8] = 1;
 	}
 }
 
-//knuckle click
-function k1click(){
-	if (kvar[1] == 1){
-		document.getElementById('k1').innerHTML = '<img src="SSR/k1.jpg" />';
-		kvar[1] = 0;
-		kvar[2] = 0;
+function i9click(){
+	if (ivar[9] == 1){
+		document.getElementById('i9').innerHTML = '<img src="SSR/Wind/9.jpg" /><img class="overlayImage2" src="characters/SSR/i2.png"/>';
+		ivar[9] = 0;
 	} else {
-		document.getElementById('k1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		kvar[1] = 1;
-		kvar[2] = 1;
+		document.getElementById('i9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[9] = 1;
 	}
 }
 
-function k3click(){
-	if (kvar[3] == 1){
-		document.getElementById('k3').innerHTML = '<img src="SSR/k3.jpg" /><img class="overlayImage2" src="characters/SSR/f7.png"/>';
-		kvar[3] = 0;
-		kvar[4] = 0;
+function i10click(){
+	if (ivar[10] == 1){
+		document.getElementById('i10').innerHTML = '<img src="SSR/Wind/10.jpg" /><img class="overlayImage2" src="characters/SSR/i7.png"/>';
+		ivar[10] = 0;
 	} else {
-		document.getElementById('k3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		kvar[3] = 1;
-		kvar[4] = 1;
+		document.getElementById('i10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[10] = 1;
 	}
 }
 
-function k5click(){
-	if (kvar[5] == 1){
-		document.getElementById('k5').innerHTML = '<img src="SSR/k5.jpg" /><img class="overlayImage2" src="characters/SSR/w6.png"/>';
-		kvar[5] = 0;
-		kvar[6] = 0;
+function i11click(){
+	if (ivar[11] == 1){
+		document.getElementById('i11').innerHTML = '<img src="SSR/Wind/11.jpg" /><img class="overlayImage2" src="characters/SSR/i8.png"/>';
+		ivar[11] = 0;
 	} else {
-		document.getElementById('k5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		kvar[5] = 1;
-		kvar[6] = 1;
+		document.getElementById('i11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[11] = 1;
 	}
 }
 
-function k7click(){
-	if (kvar[7] == 1){
-		document.getElementById('k7').innerHTML = '<img src="SSR/k7.jpg" />';
-		kvar[7] = 0;
-		kvar[8] = 0;
+function i12click(){
+	if (ivar[12] == 1){
+		document.getElementById('i12').innerHTML = '<img src="SSR/Wind/12.jpg"/>';
+		ivar[12] = 0;
 	} else {
-		document.getElementById('k7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		kvar[7] = 1;
-		kvar[8] = 1;
+		document.getElementById('i12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[12] = 1;
 	}
 }
 
-function k9click(){
-	if (kvar[9] == 1){
-		document.getElementById('k9').innerHTML = '<img src="SSR/k9.jpg" /><img class="overlayImage2" src="characters/SSR/d5.png"/>';
-		kvar[9] = 0;
-		kvar[10] = 0;
+function i13click(){
+	if (ivar[13] == 1){
+		document.getElementById('i13').innerHTML = '<img src="SSR/Wind/13.jpg"/>';
+		ivar[13] = 0;
 	} else {
-		document.getElementById('k9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		kvar[9] = 1;
-		kvar[10] = 1;
+		document.getElementById('i13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[13] = 1;
 	}
 }
 
-
-
-
-
-//bow click
-function b1click(){
-	if (bvar[1] == 1){
-		document.getElementById('b1').innerHTML = '<img src="SSR/b1.jpg" />';
-		bvar[1] = 0;
-		bvar[2] = 0;
+function i14click(){
+	if (ivar[14] == 1){
+		document.getElementById('i14').innerHTML = '<img src="SSR/Wind/14.jpg"/>';
+		ivar[14] = 0;
 	} else {
-		document.getElementById('b1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		bvar[1] = 1;
-		bvar[2] = 1;
+		document.getElementById('i14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[14] = 1;
 	}
 }
 
-function b3click(){
-	if (bvar[3] == 1){
-		document.getElementById('b3').innerHTML = '<img src="SSR/b3.jpg" />';
-		bvar[3] = 0;
-		bvar[4] = 0;
+function i15click(){
+	if (ivar[15] == 1){
+		document.getElementById('i15').innerHTML = '<img src="SSR/Wind/15.jpg"/>';
+		ivar[15] = 0;
 	} else {
-		document.getElementById('b3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		bvar[3] = 1;
-		bvar[4] = 1;
+		document.getElementById('i15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[15] = 1;
 	}
 }
 
-function b5click(){
-	if (bvar[5] == 1){
-		document.getElementById('b5').innerHTML = '<img src="SSR/b5.jpg" />';
-		bvar[5] = 0;
-		bvar[6] = 0;
+function i16click(){
+	if (ivar[16] == 1){
+		document.getElementById('i16').innerHTML = '<img src="SSR/Wind/16.jpg"/>';
+		ivar[16] = 0;
 	} else {
-		document.getElementById('b5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		bvar[5] = 1;
-		bvar[6] = 1;
-	}
-}
-
-function b7click(){
-	if (bvar[7] == 1){
-		document.getElementById('b7').innerHTML = '<img src="SSR/b7.jpg" />';
-		bvar[7] = 0;
-		bvar[8] = 0;
-	} else {
-		document.getElementById('b7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		bvar[7] = 1;
-		bvar[8] = 1;
-	}
-}
-
-function b9click(){
-	if (bvar[9] == 1){
-		document.getElementById('b9').innerHTML = '<img src="SSR/b9.jpg" /><img class="overlayImage2" src="characters/SSR/i5.png"/>';
-		bvar[9] = 0;
-		bvar[10] = 0;
-	} else {
-		document.getElementById('b9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		bvar[9] = 1;
-		bvar[10] = 1;
+		document.getElementById('i16').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		ivar[16] = 1;
 	}
 }
 
 
 
-
-
-//knife click
-function n1click(){
-	if (nvar[1] == 1){
-		document.getElementById('n1').innerHTML = '<img src="SSR/n1.jpg" /><img class="overlayImage2" src="characters/SSR/w2.png"/>';
-		nvar[1] = 0;
-		nvar[2] = 0;
+//Light click
+function l1click(){
+	if (lvar[1] == 1){
+		document.getElementById('l1').innerHTML = '<img src="SSR/Light/1.jpg"/><img class="overlayImage2" src="characters/SSR/l7.png"/>';
+		lvar[1] = 0;
 	} else {
-		document.getElementById('n1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[1] = 1;
-		nvar[2] = 1;
-	}
-}
-function n3click(){
-	if (nvar[3] == 1){
-		document.getElementById('n3').innerHTML = '<img src="SSR/n3.jpg" />';
-		nvar[3] = 0;
-		nvar[4] = 0;
-	} else {
-		document.getElementById('n3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[3] = 1;
-		nvar[4] = 1;
+		document.getElementById('l1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[1] = 1;
 	}
 }
 
-function n5click(){
-	if (nvar[5] == 1){
-		document.getElementById('n5').innerHTML = '<img src="SSR/n5.jpg" /><img class="overlayImage2" src="characters/SSR/i4.png"/>';
-		nvar[5] = 0;
-		nvar[6] = 0;
+function l2click(){
+	if (lvar[2] == 1){
+		document.getElementById('l2').innerHTML = '<img src="SSR/Light/2.jpg"/><img class="overlayImage2" src="characters/SSR/l3.png"/>';
+		lvar[2] = 0;
 	} else {
-		document.getElementById('n5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[5] = 1;
-		nvar[6] = 1;
+		document.getElementById('l2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[2] = 1;
 	}
 }
 
-function n7click(){
-	if (nvar[7] == 1){
-		document.getElementById('n7').innerHTML = '<img src="SSR/n7.jpg" /><img class="overlayImage2" src="characters/SSR/f6.png"/>';
-		nvar[7] = 0;
-		nvar[8] = 0;
+function l3click(){
+	if (lvar[3] == 1){
+		document.getElementById('l3').innerHTML = '<img src="SSR/Light/3.jpg"/>';
+		lvar[3] = 0;
 	} else {
-		document.getElementById('n7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[7] = 1;
-		nvar[8] = 1;
+		document.getElementById('l3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[3] = 1;
 	}
 }
 
-function n9click(){
-	if (nvar[9] == 1){
-		document.getElementById('n9').innerHTML = '<img src="SSR/n9.jpg" /><img class="overlayImage2" src="characters/SSR/d6.png"/>';
-		nvar[9] = 0;
-		nvar[10] = 0;
+function l4click(){
+	if (lvar[4] == 1){
+		document.getElementById('l4').innerHTML = '<img src="SSR/Light/4.jpg"/><img class="overlayImage2" src="characters/SSR/l3.png"/>';
+		lvar[4] = 0;
 	} else {
-		document.getElementById('n9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[9] = 1;
-		nvar[10] = 1;
+		document.getElementById('l4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[4] = 1;
 	}
 }
 
-function n11click(){
-	if (nvar[11] == 1){
-		document.getElementById('n11').innerHTML = '<img src="SSR/n11.jpg" />';
-		nvar[11] = 0;
-		nvar[12] = 0;
+function l5click(){
+	if (lvar[5] == 1){
+		document.getElementById('l5').innerHTML = '<img src="SSR/Light/5.jpg"/><img class="overlayImage2" src="characters/SSR/l1.png"/>';
+		lvar[5] = 0;
 	} else {
-		document.getElementById('n11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		nvar[11] = 1;
-		nvar[12] = 1;
+		document.getElementById('l5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[5] = 1;
 	}
 }
 
-
-
-
-
-
-//gun click
-function g1click(){
-	if (gvar[1] == 1){
-		document.getElementById('g1').innerHTML = '<img src="SSR/g1.jpg" />';
-		gvar[1] = 0;
-		gvar[2] = 0;
+function l6click(){
+	if (lvar[6] == 1){
+		document.getElementById('l6').innerHTML = '<img src="SSR/Light/6.jpg"/><img class="overlayImage2" src="characters/SSR/l6.png"/>';
+		lvar[6] = 0;
 	} else {
-		document.getElementById('g1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		gvar[1] = 1;
-		gvar[2] = 1;
+		document.getElementById('l6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[6] = 1;
 	}
 }
-function g3click(){
-	if (gvar[3] == 1){
-		document.getElementById('g3').innerHTML = '<img src="SSR/g3.jpg" /><img class="overlayImage2" src="characters/SSR/w4.png"/>';
-		gvar[3] = 0;
-		gvar[4] = 0;
+
+function l7click(){
+	if (lvar[7] == 1){
+		document.getElementById('l7').innerHTML = '<img src="SSR/Light/7.jpg"/><img class="overlayImage2" src="characters/SSR/l2.png"/>';
+		lvar[7] = 0;
 	} else {
-		document.getElementById('g3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		gvar[3] = 1;
-		gvar[4] = 1;
+		document.getElementById('l7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[7] = 1;
 	}
 }
-function g5click(){
-	if (gvar[5] == 1){
-		document.getElementById('g5').innerHTML = '<img src="SSR/g5.jpg" />';
-		gvar[5] = 0;
-		gvar[6] = 0;
+
+function l8click(){
+	if (lvar[8] == 1){
+		document.getElementById('l8').innerHTML = '<img src="SSR/Light/8.jpg"/>';
+		lvar[8] = 0;
 	} else {
-		document.getElementById('g5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		gvar[5] = 1;
-		gvar[6] = 1;
+		document.getElementById('l8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[8] = 1;
 	}
 }
-function g7click(){
-	if (gvar[7] == 1){
-		document.getElementById('g7').innerHTML = '<img src="SSR/g7.jpg" /><img class="overlayImage2" src="characters/SSR/i3.png"/>';
-		gvar[7] = 0;
-		gvar[8] = 0;
+
+function l9click(){
+	if (lvar[9] == 1){
+		document.getElementById('l9').innerHTML = '<img src="SSR/Light/9.jpg"/><img class="overlayImage2" src="characters/SSR/l5.png"/>';
+		lvar[9] = 0;
 	} else {
-		document.getElementById('g7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		gvar[7] = 1;
-		gvar[8] = 1;
+		document.getElementById('l9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[9] = 1;
+	}
+}
+
+function l10click(){
+	if (lvar[10] == 1){
+		document.getElementById('l10').innerHTML = '<img src="SSR/Light/10.jpg"/>';
+		lvar[10] = 0;
+	} else {
+		document.getElementById('l10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[10] = 1;
+	}
+}
+
+function l11click(){
+	if (lvar[11] == 1){
+		document.getElementById('l11').innerHTML = '<img src="SSR/Light/11.jpg"/>';
+		lvar[11] = 0;
+	} else {
+		document.getElementById('l11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[11] = 1;
+	}
+}
+
+function l12click(){
+	if (lvar[12] == 1){
+		document.getElementById('l12').innerHTML = '<img src="SSR/Light/12.jpg"/>';
+		lvar[12] = 0;
+	} else {
+		document.getElementById('l12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[12] = 1;
+	}
+}
+
+function l13click(){
+	if (lvar[13] == 1){
+		document.getElementById('l13').innerHTML = '<img src="SSR/Light/13.jpg"/>';
+		lvar[13] = 0;
+	} else {
+		document.getElementById('l13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[13] = 1;
+	}
+}
+
+function l14click(){
+	if (lvar[14] == 1){
+		document.getElementById('l14').innerHTML = '<img src="SSR/Light/14.jpg"/>';
+		lvar[14] = 0;
+	} else {
+		document.getElementById('l14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[14] = 1;
+	}
+}
+
+function l15click(){
+	if (lvar[15] == 1){
+		document.getElementById('l15').innerHTML = '<img src="SSR/Light/15.jpg"/>';
+		lvar[15] = 0;
+	} else {
+		document.getElementById('l15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		lvar[15] = 1;
 	}
 }
 
@@ -1004,159 +1147,144 @@ function g7click(){
 
 
 
-
-//spear click
-function p1click(){
-	if (pvar[1] == 1){
-		document.getElementById('p1').innerHTML = '<img src="SSR/p1.jpg" /><img class="overlayImage2" src="characters/SSR/i1.png"/>';
-		pvar[1] = 0;
-		pvar[2] = 0;
+//Dark click
+function d1click(){
+	if (dvar[1] == 1){
+		document.getElementById('d1').innerHTML = '<img src="SSR/Dark/1.jpg"/><img class="overlayImage2" src="characters/SSR/d5.png"/>';
+		dvar[1] = 0;
 	} else {
-		document.getElementById('p1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[1] = 1;
-		pvar[2] = 1;
+		document.getElementById('d1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[1] = 1;
 	}
 }
 
-function p3click(){
-	if (pvar[3] == 1){
-		document.getElementById('p3').innerHTML = '<img src="SSR/p3.jpg" /><img class="overlayImage2" src="characters/SSR/f3.png"/>';
-		pvar[3] = 0;
-		pvar[4] = 0;
+function d2click(){
+	if (dvar[2] == 1){
+		document.getElementById('d2').innerHTML = '<img src="SSR/Dark/2.jpg"/><img class="overlayImage2" src="characters/SSR/d6.png"/>';
+		dvar[2] = 0;
 	} else {
-		document.getElementById('p3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[3] = 1;
-		pvar[4] = 1;
+		document.getElementById('d2').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[2] = 1;
 	}
 }
 
-function p5click(){
-	if (pvar[5] == 1){
-		document.getElementById('p5').innerHTML = '<img src="SSR/p5.jpg" /><img class="overlayImage2" src="characters/SSR/e6.png"/>';
-		pvar[5] = 0;
-		pvar[6] = 0;
+function d3click(){
+	if (dvar[3] == 1){
+		document.getElementById('d3').innerHTML = '<img src="SSR/Dark/3.jpg"/>';
+		dvar[3] = 0;
 	} else {
-		document.getElementById('p5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[5] = 1;
-		pvar[6] = 1;
+		document.getElementById('d3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[3] = 1;
 	}
 }
 
-function p7click(){
-	if (pvar[7] == 1){
-		document.getElementById('p7').innerHTML = '<img src="SSR/p7.jpg" /><img class="overlayImage2" src="characters/SSR/i6.png"/>';
-		pvar[7] = 0;
-		pvar[8] = 0;
+function d4click(){
+	if (dvar[4] == 1){
+		document.getElementById('d4').innerHTML = '<img src="SSR/Dark/4.jpg"/>';
+		dvar[4] = 0;
 	} else {
-		document.getElementById('p7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[7] = 1;
-		pvar[8] = 1;
+		document.getElementById('d4').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[4] = 1;
 	}
 }
 
-function p9click(){
-	if (pvar[9] == 1){
-		document.getElementById('p9').innerHTML = '<img src="SSR/p9.jpg" />';
-		pvar[9] = 0;
-		pvar[10] = 0;
+function d5click(){
+	if (dvar[5] == 1){
+		document.getElementById('d5').innerHTML = '<img src="SSR/Dark/5.jpg" /><img class="overlayImage2" src="characters/SSR/d4.png"/>';
+		dvar[5] = 0;
 	} else {
-		document.getElementById('p9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[9] = 1;
-		pvar[10] = 1;
+		document.getElementById('d5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[5] = 1;
 	}
 }
 
-function p11click(){
-	if (pvar[11] == 1){
-		document.getElementById('p11').innerHTML = '<img src="SSR/p11.jpg" /><img class="overlayImage2" src="characters/SSR/f8.png"/>';
-		pvar[11] = 0;
-		pvar[12] = 0;
+function d6click(){
+	if (dvar[6] == 1){
+		document.getElementById('d6').innerHTML = '<img src="SSR/Dark/6.jpg" /><img class="overlayImage2" src="characters/SSR/d2.png"/>';
+		dvar[6] = 0;
 	} else {
-		document.getElementById('p11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		pvar[11] = 1;
-		pvar[12] = 1;
+		document.getElementById('d6').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[6] = 1;
 	}
 }
 
+function d7click(){
+	if (dvar[7] == 1){
+		document.getElementById('d7').innerHTML = '<img src="SSR/Dark/7.jpg" /><img class="overlayImage2" src="characters/SSR/d3.png"/>';
+		dvar[7] = 0;
+	} else {
+		document.getElementById('d7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[7] = 1;
+	}
+}
 
+function d8click(){
+	if (dvar[8] == 1){
+		document.getElementById('d8').innerHTML = '<img src="SSR/Dark/8.jpg" /><img class="overlayImage2" src="characters/SSR/d1.png"/>';
+		dvar[8] = 0;
+	} else {
+		document.getElementById('d8').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[8] = 1;
+	}
+}
 
-//axe click
-function x1click(){
-	if (xvar[1] == 1){
-		document.getElementById('x1').innerHTML = '<img src="SSR/x1.jpg" /><img class="overlayImage2" src="characters/SSR/f5.png"/>';
-		xvar[1] = 0;
-		xvar[2] = 0;
+function d9click(){
+	if (dvar[9] == 1){
+		document.getElementById('d9').innerHTML = '<img src="SSR/Dark/9.jpg" /><img class="overlayImage2" src="characters/SSR/d7.png"/>';
+		dvar[9] = 0;
 	} else {
-		document.getElementById('x1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[1] = 1;
-		xvar[2] = 1;
+		document.getElementById('d9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[9] = 1;
 	}
 }
-function x3click(){
-	if (xvar[3] == 1){
-		document.getElementById('x3').innerHTML = '<img src="SSR/x3.jpg" />';
-		xvar[3] = 0;
-		xvar[4] = 0;
+
+function d10click(){
+	if (dvar[10] == 1){
+		document.getElementById('d10').innerHTML = '<img src="SSR/Dark/10.jpg"/>';
+		dvar[10] = 0;
 	} else {
-		document.getElementById('x3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[3] = 1;
-		xvar[4] = 1;
+		document.getElementById('d10').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[10] = 1;
 	}
 }
-function x5click(){
-	if (xvar[5] == 1){
-		document.getElementById('x5').innerHTML = '<img src="SSR/x5.jpg" />';
-		xvar[5] = 0;
-		xvar[6] = 0;
+
+function d11click(){
+	if (dvar[11] == 1){
+		document.getElementById('d11').innerHTML = '<img src="SSR/Dark/11.jpg"/>';
+		dvar[11] = 0;
 	} else {
-		document.getElementById('x5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[5] = 1;
-		xvar[6] = 1;
+		document.getElementById('d11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[11] = 1;
 	}
 }
-function x7click(){
-	if (xvar[7] == 1){
-		document.getElementById('x7').innerHTML = '<img src="SSR/x7.jpg" /><img class="overlayImage2" src="characters/SSR/i2.png"/>';
-		xvar[7] = 0;
-		xvar[8] = 0;
+
+function d12click(){
+	if (dvar[12] == 1){
+		document.getElementById('d12').innerHTML = '<img src="SSR/Dark/12.jpg"/>';
+		dvar[12] = 0;
 	} else {
-		document.getElementById('x7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[7] = 1;
-		xvar[8] = 1;
+		document.getElementById('d12').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[12] = 1;
 	}
 }
-function x9click(){
-	if (xvar[9] == 1){
-		document.getElementById('x9').innerHTML = '<img src="SSR/x9.jpg" /><img class="overlayImage2" src="characters/SSR/d1.png"/>';
-		xvar[9] = 0;
-		xvar[10] = 0;
+
+function d13click(){
+	if (dvar[13] == 1){
+		document.getElementById('d13').innerHTML = '<img src="SSR/Dark/13.jpg"/>';
+		dvar[13] = 0;
 	} else {
-		document.getElementById('x9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[9] = 1;
-		xvar[10] = 1;
+		document.getElementById('d13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[13] = 1;
 	}
 }
-function x11click(){
-	if (xvar[11] == 1){
-		document.getElementById('x11').innerHTML = '<img src="SSR/x11.jpg" /><img class="overlayImage2" src="characters/SSR/e5.png"/>';
-		xvar[11] = 0;
-		xvar[12] = 0;
+
+function d14click(){
+	if (dvar[14] == 1){
+		document.getElementById('d14').innerHTML = '<img src="SSR/Dark/14.jpg"/>';
+		dvar[14] = 0;
 	} else {
-		document.getElementById('x11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		xvar[11] = 1;
-		xvar[12] = 1;
+		document.getElementById('d14').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		dvar[14] = 1;
 	}
 }
 
@@ -1164,314 +1292,43 @@ function x11click(){
 
 
 
-//summon click
-function m1click(){
-	if (mvar[1] == 1){
-		document.getElementById('m1').innerHTML = '<img src="SSR/m1.jpg" />';
-		mvar[1] = 0;
-		mvar[2] = 0;
+//Limited click
+function limited01click(){
+	if (limitedvar[1] == 1){
+		document.getElementById('limited01').innerHTML = '<img src="SSR/limited01.jpg" /><img class="overlayImage2" src="characters/SSR/limited01.png"/>';
+		limitedvar[1] = 0;
 	} else {
-		document.getElementById('m1').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[1] = 1;
-		mvar[2] = 1;
+		document.getElementById('limited01').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		limitedvar[1] = 1;
 	}
 }
-function m3click(){
-	if (mvar[3] == 1){
-		document.getElementById('m3').innerHTML = '<img src="SSR/m3.jpg" />';
-		mvar[3] = 0;
-		mvar[4] = 0;
+
+function limited02click(){
+	if (limitedvar[2] == 1){
+		document.getElementById('limited02').innerHTML = '<img src="SSR/limited02.jpg" /><img class="overlayImage2" src="characters/SSR/limited02.png"/>';
+		limitedvar[2] = 0;
 	} else {
-		document.getElementById('m3').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[3] = 1;
-		mvar[4] = 1;
+		document.getElementById('limited02').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		limitedvar[2] = 1;
 	}
 }
-function m5click(){
-	if (mvar[5] == 1){
-		document.getElementById('m5').innerHTML = '<img src="SSR/m5.jpg" />';
-		mvar[5] = 0;
-		mvar[6] = 0;
+
+function limited03click(){
+	if (limitedvar[3] == 1){
+		document.getElementById('limited03').innerHTML = '<img src="SSR/limited03.jpg" /><img class="overlayImage2" src="characters/SSR/limited03.png"/>';
+		limitedvar[3] = 0;
 	} else {
-		document.getElementById('m5').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[5] = 1;
-		mvar[6] = 1;
+		document.getElementById('limited03').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		limitedvar[3] = 1;
 	}
 }
-function m7click(){
-	if (mvar[7] == 1){
-		document.getElementById('m7').innerHTML = '<img src="SSR/m7.jpg" />';
-		mvar[7] = 0;
-		mvar[8] = 0;
+
+function limited04click(){
+	if (limitedvar[4] == 1){
+		document.getElementById('limited04').innerHTML = '<img src="SSR/limited04.jpg" /><img class="overlayImage2" src="characters/SSR/limited04.png"/>';
+		limitedvar[4] = 0;
 	} else {
-		document.getElementById('m7').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[7] = 1;
-		mvar[8] = 1;
-	}
-}
-function m9click(){
-	if (mvar[9] == 1){
-		document.getElementById('m9').innerHTML = '<img src="SSR/m9.jpg" />';
-		mvar[9] = 0;
-		mvar[10] = 0;
-	} else {
-		document.getElementById('m9').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[9] = 1;
-		mvar[10] = 1;
-	}
-}
-function m11click(){
-	if (mvar[11] == 1){
-		document.getElementById('m11').innerHTML = '<img src="SSR/m11.jpg" />';
-		mvar[11] = 0;
-		mvar[12] = 0;
-	} else {
-		document.getElementById('m11').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[11] = 1;
-		mvar[12] = 1;
-	}
-}
-function m13click(){
-	if (mvar[13] == 1){
-		document.getElementById('m13').innerHTML = '<img src="SSR/m13.jpg" />';
-		mvar[13] = 0;
-		mvar[14] = 0;
-	} else {
-		document.getElementById('m13').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[13] = 1;
-		mvar[14] = 1;
-	}
-}
-function m15click(){
-	if (mvar[15] == 1){
-		document.getElementById('m15').innerHTML = '<img src="SSR/m15.jpg" />';
-		mvar[15] = 0;
-		mvar[16] = 0;
-	} else {
-		document.getElementById('m15').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[15] = 1;
-		mvar[16] = 1;
-	}
-}
-function m17click(){
-	if (mvar[17] == 1){
-		document.getElementById('m17').innerHTML = '<img src="SSR/m17.jpg" />';
-		mvar[17] = 0;
-		mvar[18] = 0;
-	} else {
-		document.getElementById('m17').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[17] = 1;
-		mvar[18] = 1;
-	}
-}
-function m19click(){
-	if (mvar[19] == 1){
-		document.getElementById('m19').innerHTML = '<img src="SSR/m19.jpg" />';
-		mvar[19] = 0;
-		mvar[20] = 0;
-	} else {
-		document.getElementById('m19').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[19] = 1;
-		mvar[20] = 1;
-	}
-}
-function m21click(){
-	if (mvar[21] == 1){
-		document.getElementById('m21').innerHTML = '<img src="SSR/m21.jpg" />';
-		mvar[21] = 0;
-	} else {
-		document.getElementById('m21').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[21] = 1;
-	}
-}
-function m22click(){
-	if (mvar[22] == 1){
-		document.getElementById('m22').innerHTML = '<img src="SSR/m22.jpg" />';
-		mvar[22] = 0;
-		mvar[23] = 0;
-	} else {
-		document.getElementById('m22').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[22] = 1;
-		mvar[23] = 1;
-	}
-}
-function m24click(){
-	if (mvar[24] == 1){
-		document.getElementById('m24').innerHTML = '<img src="SSR/m24.jpg" />';
-		mvar[24] = 0;
-		mvar[25] = 0;
-	} else {
-		document.getElementById('m24').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[24] = 1;
-		mvar[25] = 1;
-	}
-}
-function m26click(){
-	if (mvar[26] == 1){
-		document.getElementById('m26').innerHTML = '<img src="SSR/m26.jpg" />';
-		mvar[26] = 0;
-		mvar[27] = 0;
-	} else {
-		document.getElementById('m26').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[26] = 1;
-		mvar[27] = 1;
-	}
-}
-function m28click(){
-	if (mvar[28] == 1){
-		document.getElementById('m28').innerHTML = '<img src="SSR/m28.jpg" />';
-		mvar[28] = 0;
-		mvar[29] = 0;
-	} else {
-		document.getElementById('m28').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[28] = 1;
-		mvar[29] = 1;
-	}
-}
-function m30click(){
-	if (mvar[30] == 1){
-		document.getElementById('m30').innerHTML = '<img src="SSR/m30.jpg" />';
-		mvar[30] = 0;
-		mvar[31] = 0;
-	} else {
-		document.getElementById('m30').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[30] = 1;
-		mvar[31] = 1;
-	}
-}
-function m32click(){
-	if (mvar[32] == 1){
-		document.getElementById('m32').innerHTML = '<img src="SSR/m32.jpg" />';
-		mvar[32] = 0;
-		mvar[33] = 0;
-	} else {
-		document.getElementById('m32').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[32] = 1;
-		mvar[33] = 1;
-	}
-}
-function m34click(){
-	if (mvar[34] == 1){
-		document.getElementById('m34').innerHTML = '<img src="SSR/m34.jpg" />';
-		mvar[34] = 0;
-		mvar[35] = 0;
-	} else {
-		document.getElementById('m34').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[34] = 1;
-		mvar[35] = 1;
-	}
-}
-function m36click(){
-	if (mvar[36] == 1){
-		document.getElementById('m36').innerHTML = '<img src="SSR/m36.jpg" />';
-		mvar[36] = 0;
-	} else {
-		document.getElementById('m36').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[36] = 1;
-	}
-}
-function m37click(){
-	if (mvar[37] == 1){
-		document.getElementById('m37').innerHTML = '<img src="SSR/m37.jpg" />';
-		mvar[37] = 0;
-	} else {
-		document.getElementById('m37').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[37] = 1;
-	}
-}
-function m38click(){
-	if (mvar[38] == 1){
-		document.getElementById('m38').innerHTML = '<img src="SSR/m38.jpg" />';
-		mvar[38] = 0;
-	} else {
-		document.getElementById('m38').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[38] = 1;
-	}
-}
-function m39click(){
-	if (mvar[39] == 1){
-		document.getElementById('m39').innerHTML = '<img src="SSR/m39.jpg" />';
-		mvar[39] = 0;
-		mvar[40] = 0;
-	} else {
-		document.getElementById('m39').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[39] = 1;
-		mvar[40] = 1;
-	}
-}
-function m41click(){
-	if (mvar[41] == 1){
-		document.getElementById('m41').innerHTML = '<img src="SSR/m41.jpg" />';
-		mvar[41] = 0;
-	} else {
-		document.getElementById('m41').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[41] = 1;
-	}
-}
-function m42click(){
-	if (mvar[42] == 1){
-		document.getElementById('m42').innerHTML = '<img src="SSR/m42.jpg" />';
-		mvar[42] = 0;
-		mvar[43] = 0;
-	} else {
-		document.getElementById('m42').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[42] = 1;
-		mvar[43] = 1;
-	}
-}
-function m44click(){
-	if (mvar[44] == 1){
-		document.getElementById('m44').innerHTML = '<img src="SSR/m44.jpg" />';
-		mvar[44] = 0;
-		mvar[45] = 0;
-	} else {
-		document.getElementById('m44').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[44] = 1;
-		mvar[45] = 1;
-	}
-}
-function m46click(){
-	if (mvar[46] == 1){
-		document.getElementById('m46').innerHTML = '<img src="SSR/m46.jpg" />';
-		mvar[46] = 0;
-	} else {
-		document.getElementById('m46').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[46] = 1;
-	}
-}
-function m47click(){
-	if (mvar[47] == 1){
-		document.getElementById('m47').innerHTML = '<img src="SSR/m47.jpg" />';
-		mvar[47] = 0;
-	} else {
-		document.getElementById('m47').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
-		
-		mvar[47] = 1;
+		document.getElementById('limited04').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		limitedvar[4] = 1;
 	}
 }

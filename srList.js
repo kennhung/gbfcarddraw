@@ -82,7 +82,7 @@ window.srList=[
 	[
 		"SR/s9.jpg",
 		"sword",
-		"DL",
+		"light",
 		"characters/SR/l6.jpg",
 		"characters/SR/l6.png",
 		"SRlight6",
@@ -102,7 +102,7 @@ window.srList=[
 	[
 		"SR/s11.jpg",
 		"sword",
-		"DL",
+		"dark",
 		"characters/SR/d3.jpg",
 		"characters/SR/d3.png",
 		"SRdark3",
@@ -112,7 +112,7 @@ window.srList=[
 	[
 		"SR/s12.jpg",
 		"sword",
-		"DL",
+		"dark",
 		"characters/SR/d1.jpg",
 		"characters/SR/d1.png",
 		"SRdark1",
@@ -172,7 +172,7 @@ window.srList=[
 	[
 		"SR/n6.jpg",
 		"knife",
-		"DL",
+		"light",
 		"characters/SR/l4.jpg",
 		"characters/SR/l4.png",
 		"SRlight4",
@@ -182,7 +182,7 @@ window.srList=[
 	[
 		"SR/n7.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -192,7 +192,7 @@ window.srList=[
 	[
 		"SR/n8.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"characters/SR/d5.jpg",
 		"characters/SR/d5.png",
 		"SRdark5",
@@ -262,7 +262,7 @@ window.srList=[
 	[
 		"SR/p7.jpg",
 		"spear",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -272,12 +272,32 @@ window.srList=[
 	[
 		"SR/p8.jpg",
 		"spear",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
 		"",
 		""
+	],
+	[
+		"SR/p9.jpg",
+		"spear",
+		"water",
+		"characters/SR/e8.jpg",
+		"characters/SR/e8.png",
+		"SRearth8",
+		"",
+		"release"
+	],
+		[
+		"SR/p10.jpg",
+		"spear",
+		"water",
+		"characters/SR/e7.jpg",
+		"characters/SR/e7.png",
+		"SRearth7",
+		"",
+		"release"
 	],
 	[
 		"SR/x1.jpg",
@@ -302,7 +322,7 @@ window.srList=[
 	[
 		"SR/x3.jpg",
 		"axe",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -312,7 +332,7 @@ window.srList=[
 	[
 		"SR/x4.jpg",
 		"axe",
-		"DL",
+		"dark",
 		"characters/SR/d4.jpg",
 		"characters/SR/d4.png",
 		"SRdark4",
@@ -342,7 +362,7 @@ window.srList=[
 	[
 		"SR/w2.jpg",
 		"wand",
-		"DL",
+		"light",
 		"characters/SR/l3.jpg",
 		"characters/SR/l3.png",
 		"SRlight3",
@@ -392,7 +412,7 @@ window.srList=[
 	[
 		"SR/w7.jpg",
 		"wand",
-		"DL",
+		"light",
 		"characters/SR/l5.jpg",
 		"characters/SR/l5.png",
 		"SRlight5",
@@ -402,7 +422,7 @@ window.srList=[
 	[
 		"SR/w8.jpg",
 		"wand",
-		"DL",
+		"light",
 		"characters/SR/l7.jpg",
 		"characters/SR/l7.png",
 		"SRlight7",
@@ -412,7 +432,7 @@ window.srList=[
 	[
 		"SR/w9.jpg",
 		"wand",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -422,7 +442,7 @@ window.srList=[
 	[
 		"SR/w10.jpg",
 		"wand",
-		"DL",
+		"dark",
 		"characters/SR/d2.jpg",
 		"characters/SR/d2.png",
 		"SRdark2",
@@ -436,6 +456,26 @@ window.srList=[
 		"characters/SR/f9.jpg",
 		"characters/SR/f9.png",
 		"SRfire9",
+		"",
+		"release"
+	],
+	[
+		"SR/w12.jpg",
+		"wand",
+		"earth",
+		"characters/SR/e9.jpg",
+		"characters/SR/e9.png",
+		"SRearth9",
+		"",
+		"release"
+	],
+	[
+		"SR/w13.jpg",
+		"wand",
+		"wind",
+		"characters/SR/i7.jpg",
+		"characters/SR/i7.png",
+		"SRwind7",
 		"",
 		"release"
 	],
@@ -502,7 +542,7 @@ window.srList=[
 	[
 		"SR/g7.jpg",
 		"gun",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -612,7 +652,7 @@ window.srList=[
 	[
 		"SR/k11.jpg",
 		"knuckle",
-		"DL",
+		"light",
 		"characters/SR/l1.jpg",
 		"characters/SR/l1.png",
 		"SRlight1",
@@ -622,7 +662,7 @@ window.srList=[
 	[
 		"SR/k12.jpg",
 		"knuckle",
-		"DL",
+		"light",
 		"characters/SR/l2.jpg",
 		"characters/SR/l2.png",
 		"SRlight2",
@@ -692,7 +732,7 @@ window.srList=[
 	[
 		"SR/b7.jpg",
 		"bow",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -762,7 +802,7 @@ window.srList=[
 	[
 		"SR/a3.jpg",
 		"katana",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -942,7 +982,7 @@ window.srList=[
 	[
 		"SR/m18.jpg",
 		"summon",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -952,7 +992,7 @@ window.srList=[
 	[
 		"SR/m19.jpg",
 		"summon",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -962,7 +1002,7 @@ window.srList=[
 	[
 		"SR/m20.jpg",
 		"summon",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",

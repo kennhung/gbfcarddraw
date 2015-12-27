@@ -12,7 +12,7 @@
 
 </script>
 	<meta charset="utf-8">
-	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v1.0</title>
+	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v1.1</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Granblu Fantasy, Draw Card, Simulator, グランブルーファンタジー, グラブル, ガチャ, シミュレータ, エミュレータ">
@@ -61,7 +61,7 @@ var ssrGet = 1;
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv1.0<br />碧藍幻想抽卡模擬器v1.0</h1>
+				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv1.1<br />碧藍幻想抽卡模擬器v1.1</h1>
 				<h1 class="white bold shadow">by Wee張同學</h1>
 			</div>
 		</div>
@@ -71,9 +71,9 @@ var ssrGet = 1;
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<div class="messages">
-					<p>模擬器說明：<br />- 選擇想要的屬性Up或者武器Up并點選90c單抽或3000元十抽即可。<br />
+					<p>模擬器說明：<br />- 選擇想要的屬性Up并點選3000元十抽即可。<br />
 					- 和遊戲一樣，十抽至少會有一SR，而模擬器的抽卡幾率是82%R, 15%SR, 3%SSR，如果是6%的卡包則是79%R, 15%SR, 6%SSR。<br />
-					- 抽90c的時候系統日子會增加一天，而必SSR每個月最多只可以抽一次。想抽多一次就重新整理網頁，或者90c抽掉模擬器的一個月日數即可<br />
+					<!--- 抽90c的時候系統日子會增加一天，而必SSR每個月最多只可以抽一次。想抽多一次就重新整理網頁，或者90c抽掉模擬器的一個月日數即可<br />-->
 					- 模擬器的抽卡幾率和期望值計算出來的幾率是使用個人所認為的公式計算出來的，是否和官方的幾率相符，無法測試，<br />
 					- 儘管個人認為是和實際幾率相當接近的，但請各位抱著純娛樂和參考的心態來使用模擬器就好。不要太認真w<br />
 					<br />
@@ -151,23 +151,23 @@ var ssrGet = 1;
             		<tr><td style="width:12%" rowspan="4"></td><td id="cardBanner">
                 </td></tr>
             		<tr><td><div id="cotentbanner"><img src="images/banner_21331_3nfedxu2.png" /></div>
-                <button type="image" class="drawBtn1" onclick="singleDraw()"><img src="images/text_legend_discount.png"/></button>
+                <!--<button type="image" class="drawBtn1" onclick="singleDraw()"><img src="images/text_legend_discount.png"/></button>-->
                 
                 <button type="image" onclick="tenDraw()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
+				
+				<button type="image" onclick="starTen()" id="drawBtn2" ><img src="images/text_starlegend10.png" /></button>
 				</td></tr><tr><td class="goldbar">
                 <form name="cash"><div style="margin-left: 5%; font-size:small;"><p>課金累計：<input type="text" name="Display" value="0" size="16" disabled></div></form></p>
                 </td></tr><tr><td class="silverbar">
 					<p>屬性UP選擇：
 					<select onclick="bannerChange()" size="1" id="slt_dMethod" name="dMethod">
-						<option value="1">無UP</option>
-						<option value="2">火UP</option>
-						<option value="3">土UP</option>
-						<option value="4">水UP</option>
-						<option value="5">風UP</option>
-						<option value="6">光闇UP</option>
-						<option value="7">星晶獸UP</option>
-						<option value="8">終解UP</option>
-						<option value="9">6% (キャラUP)</option>
+						<option value="1">火UP</option>
+						<option value="2">土UP</option>
+						<option value="3">水UP</option>
+						<option value="4">風UP</option>
+						<option value="5">光UP</option>
+						<option value="6">闇UP</option>
+						<option value="7">6% (キャラUP)</option>
 					</select>
 					</p>
             </td><td style="width:12%" rowspan="2"></td></tr>
@@ -180,30 +180,7 @@ var ssrGet = 1;
 </section>
 <section class="container">
 <div class="row">
-<div class="col-md-6 col-sm-12">
-<div class="skills">
-			<table class="contenttable2" border="0">
-            		<tr><td style="width:12%" rowspan="4"></td><td id="cardBanner">
-                </td></tr>
-            		<tr><td><div id="cotentbanner2"><img src="images/banner_29360_9aqkvwtz.png" /></div>
-                <button type="image" class="drawBtn1" onclick="starSingle()"><img src="images/text_legend_discount.png"/></button>
-                
-                <button type="image" onclick="starTen()" id="drawBtn2" ><img src="images/text_legend10.png" /></button>
-				<button type="image" onclick="starLegend()" id="drawBtn3" ><img src="images/text_starlegend10.png" /></button>
-				</td></tr><tr><td class="silverbar">
-					<p>武器UP選擇：
-					<select onclick="bannerChange()" size="1" id="slt_dMethod2" name="dMethod2">
-						<option value="1">劍·刀UP</option>
-						<option value="2">杖·樂器UP</option>
-						<option value="3">格鬥·弓UP</option>
-						<option value="4">短劍·統UP</option>
-						<option value="5">槍·斧UP</option>
-					</select>
-					</p>
-            </td><td style="width:12%" rowspan="2"></td></tr>
-            <tr><td rowspan="3" height="5%">&nbsp;</td></tr></table>
-		</div>
-	</div>
+<!-- SSR record and Character Record -->
 	<div class="col-md-6 col-sm-12">
 			<div class="contact">
 				<h2>所獲得的SSR</h2>
@@ -348,377 +325,388 @@ var ssrGet = 1;
 				
 			</div>
 		</div>
+
+	<div class="col-md-6 col-sm-12">
+		<div class="languages">
+			<h2 class="cText">角色進度</h2>
+			<table border="0" class="characterCollection">
+			<tr>
+			  <td><div class="blockitems" id="Rfire1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire4" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rfire5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire8" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rfire9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRfire3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRfire7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRfire2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRfire6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlimited01" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRlimited03" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater3" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rwater4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>				 
+			  <td><div class="blockitems" id="SRwater2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRwater6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwater2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwater6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlimited02" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rearth1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth4" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rearth5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth8" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rearth9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth3" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRearth4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth7" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRearth8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRearth3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth6" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rwind1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind4" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rwind5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind8" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRwind1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind4" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRwind5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwind2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwind6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rlight1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rlight2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rlight3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rlight4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRlight2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRlight6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRlight3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight6" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRlight7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlimited04" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rdark1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rdark2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="Rdark3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rdark4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRdark3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRdark2" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark5" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRdark6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
+			  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
+			</tr>
+		  </table>
+		</div>
+	</div>	
 </section>
 
-<!-- SSR record and Character Record -->
+
 <section class="container">
 	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="languages">
-				<h2 class="cText">角色進度</h2>
-				<table border="0" class="characterCollection">
-				<tr>
-			      <td><div class="blockitems" id="Rfire1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rfire2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rfire3" ><img src="images/unknown.jpg" /></div></td>
-                  <td><div class="blockitems" id="Rfire4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rfire5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rfire6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rfire7" ><img src="images/unknown.jpg" /></div></td>
-                  <td><div class="blockitems" id="Rfire8" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-				  <td><div class="blockitems" id="Rfire9" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRfire1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRfire2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRfire3" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRfire4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRfire5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRfire7" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRfire8" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRfire1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRfire2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRfire3" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRfire4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRfire5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRfire6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRfire7" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRfire8" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRfire9" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRlimited01" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRlimited02" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-				  <td><div class="blockitems" id="Rearth1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rearth2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rearth3" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rearth4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rearth5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rearth6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rearth7" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rearth8" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>				  
-			      <td><div class="blockitems" id="SRearth1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRearth2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRearth3" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRearth4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRearth5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRearth6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRearth7" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRearth8" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRearth1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRearth2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRearth3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRearth4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRearth5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRearth6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rwater1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwater2" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rwater3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwater4" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rwater5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwater1" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRwater2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwater3" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRwater4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwater5" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRwater6" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRwater1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRwater2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRwater3" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-				  <td><div class="blockitems" id="SSRwater4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRwater5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRwater6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRlimited02" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rwind1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwind2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rwind3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwind4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rwind5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwind6" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rwind7" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rwind8" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRwind1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwind2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwind3" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRwind4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRwind5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRwind6" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRwind1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRwind2" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRwind3" ><img src="images/unknown.jpg" /></div></td>
-                  <td><div class="blockitems" id="SSRwind4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRwind5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRwind6" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRwind7" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rlight1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rlight2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rlight3" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rlight4" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRlight1" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRlight2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRlight3" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRlight4" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRlight5" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRlight6" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRlight7" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRlight1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRlight2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRlight3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRlight4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRlight5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRlight6" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRlight7" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rdark1" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="Rdark2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="Rdark3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="Rdark4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRdark1" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SRdark2" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SRdark3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRdark4" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SRdark5" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div class="blockitems" id="SSRdark1" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRdark2" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRdark3" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="SSRdark4" ><img src="images/unknown.jpg" /></div></td>
-		        </tr>
-				<tr>
-				  <td><div class="blockitems" id="SSRdark5" ><img src="images/unknown.jpg" /></div></td>
-			      <td><div class="blockitems" id="SSRdark6" ><img src="images/unknown.jpg" /></div></td>
-				  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
-				  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
-		        </tr>
-		      </table>
-			</div>
-		</div>
+		
 	<div class="col-md-6 col-sm-12">
 		<div class="languages">
 			<h2 class="cText">期望值計算器</h2>
 			<button type="image" class="drawBtn1" onclick="calculation()"><div style="color:#FFF">計算機率</div></button>
-			<div class="resultTable" id="calcResult"><form name="resultbox"><div class="numFont"><p><br /><br />使用說明：先選擇你需要的武器UP（暫不支援計算屬性UP），然後點選下面你想要抽到的卡片（可複選），最後再點擊上面的【計算機率】，計算器就會計算出你想抽的卡片的幾率和分析。</p></form></div></div>
+			<div class="resultTable" id="calcResult"><form name="resultbox"><div class="numFont"><p><br /><br />使用說明：先選擇你需要的屬性UP，然後點選下面你想要抽到的卡片（可複選），最後再點擊上面的【計算機率】，計算器就會計算出你想抽的卡片的幾率和分析。</p></form></div></div>
 			<div id="calc">
-			<h3 class="cText" style="color:#FFF">劍</h3><table border="0" class="characterCollection">
+			<h3 class="cText" style="color:#FFF">火</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s1" onclick="s1click()"><img src="SSR/s1.jpg" /><img class="overlayImage2" src="characters/SSR/w1.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s3" onclick="s3click()" ><img src="SSR/s3.jpg" /><img class="overlayImage2" src="characters/SSR/f1.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s5" onclick="s5click()" ><img src="SSR/s5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s7" onclick="s7click()" ><img src="SSR/s7.jpg" /><img class="overlayImage2" src="characters/SSR/w5.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s9" onclick="s9click()" ><img src="SSR/s9.jpg" /><img class="overlayImage2" src="characters/SSR/e2.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s11" onclick="s11click()" ><img src="SSR/s11.jpg" /><img class="overlayImage2" src="characters/SSR/e1.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f1" onclick="f1click()"><img src="SSR/Fire/1.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f2" onclick="f2click()" ><img src="SSR/Fire/2.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f3" onclick="f3click()" ><img src="SSR/Fire/3.jpg" /></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f4" onclick="f4click()" ><img src="SSR/Fire/4.jpg" /><img class="overlayImage2" src="characters/SSR/f4.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f5" onclick="f5click()" ><img src="SSR/Fire/5.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f6" onclick="f6click()" ><img src="SSR/Fire/6.jpg" /><img class="overlayImage2" src="characters/SSR/f7.png"/></div></td>
 		        </tr>
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s13" onclick="s13click()"><img src="SSR/s13.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s15" onclick="s15click()" ><img src="SSR/s15.jpg" /><img class="overlayImage2" src="characters/SSR/l4.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="s17" onclick="s17click()" ><img src="SSR/s17.jpg" /><img class="overlayImage2" src="characters/SSR/l1.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s19" onclick="s19click()" ><img src="SSR/s19.jpg" /><img class="overlayImage2" src="characters/SSR/l6.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s21" onclick="s21click()" ><img src="SSR/s21.jpg" /><img class="overlayImage2" src="characters/SSR/d4.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="s23" onclick="s23click()" ><img src="SSR/s23.jpg" /><img class="overlayImage2" src="characters/SSR/d2.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f7" onclick="f7click()"><img src="SSR/Fire/7.jpg" /><img class="overlayImage2" src="characters/SSR/f6.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f8" onclick="f8click()" ><img src="SSR/Fire/8.jpg" /><img class="overlayImage2" src="characters/SSR/f3.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f9" onclick="f9click()" ><img src="SSR/Fire/9.jpg" /><img class="overlayImage2" src="characters/SSR/f1.png"/></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f10" onclick="f10click()" ><img src="SSR/Fire/10.jpg" /><img class="overlayImage2" src="characters/SSR/f2.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f11" onclick="f11click()" ><img src="SSR/Fire/11.jpg" /><img class="overlayImage2" src="characters/SSR/f5.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f12" onclick="f12click()" ><img src="SSR/Fire/12.jpg" /><img class="overlayImage2" src="characters/SSR/f8.png"/></div></td>
 		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">刀</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="a1" onclick="a1click()"><img src="SSR/a1.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="a3" onclick="a3click()" ><img src="SSR/a3.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="a5" onclick="a5click()" ><img src="SSR/a5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="a7" onclick="a7click()" ><img src="SSR/a7.jpg" /><img class="overlayImage2" src="characters/SSR/l7.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f13" onclick="f13click()"><img src="SSR/Fire/13.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f14" onclick="f14click()" ><img src="SSR/Fire/14.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="f15" onclick="f15click()" ><img src="SSR/Fire/15.jpg" /></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="f16" onclick="f16click()" ><img src="SSR/Fire/16.jpg" /></div></td>
 		        </tr>
 			</table>
-			<h3 class="cText" style="color:#FFF">杖</h3><table border="0" class="characterCollection">
+			<h3 class="cText" style="color:#FFF">水</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w1" onclick="w1click()"><img src="SSR/w1.jpg" /><img class="overlayImage2" src="characters/SSR/f2.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w3" onclick="w3click()" ><img src="SSR/w3.jpg" /><img class="overlayImage2" src="characters/SSR/w3.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w5" onclick="w5click()" ><img src="SSR/w5.jpg" /><img class="overlayImage2" src="characters/SSR/e3.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w7" onclick="w7click()" ><img src="SSR/w7.jpg" /><img class="overlayImage2" src="characters/SSR/l2.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w9" onclick="w9click()" ><img src="SSR/w9.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w11" onclick="w11click()" ><img src="SSR/w11.jpg" /><img class="overlayImage2" src="characters/SSR/l5.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w1" onclick="w1click()"><img src="SSR/Water/1.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w2" onclick="w2click()"><img src="SSR/Water/2.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w3" onclick="w3click()"><img src="SSR/Water/3.jpg" /><img class="overlayImage2" src="characters/SSR/w4.png"/></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w4" onclick="w4click()"><img src="SSR/Water/4.jpg" /><img class="overlayImage2" src="characters/SSR/w6.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w5" onclick="w5click()"><img src="SSR/Water/5.jpg" /><img class="overlayImage2" src="characters/SSR/w2.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w6" onclick="w6click()"><img src="SSR/Water/6.jpg" /><img class="overlayImage2" src="characters/SSR/w1.png"/></div></td>
 		        </tr>
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w13" onclick="w13click()"><img src="SSR/w13.jpg" /><img class="overlayImage2" src="characters/SSR/d3.png"/></div></td>
-		          <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w7" onclick="w7click()"><img src="SSR/Water/7.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w8" onclick="w8click()"><img src="SSR/Water/8.jpg" /><img class="overlayImage2" src="characters/SSR/w5.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w9" onclick="w9click()"><img src="SSR/Water/9.jpg" /><img class="overlayImage2" src="characters/SSR/w3.png"/></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w10" onclick="w10click()"><img src="SSR/Water/10.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w11" onclick="w11click()"><img src="SSR/Water/11.jpg" /><img class="overlayImage2" src="characters/SSR/w7.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w12" onclick="w12click()"><img src="SSR/Water/12.jpg" /><img class="overlayImage2" src="characters/SSR/w8.png"/></div></td>
+		        </tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w13" onclick="w13click()"><img src="SSR/Water/13.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w14" onclick="w14click()"><img src="SSR/Water/14.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="w15" onclick="w15click()"><img src="SSR/Water/15.jpg" /></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w16" onclick="w16click()"><img src="SSR/Water/16.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="w17" onclick="w17click()"><img src="SSR/Water/17.jpg" /></div></td>
+		        </tr>
+			</table>
+			<h3 class="cText" style="color:#FFF">土</h3><table border="0" class="characterCollection">
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e1" onclick="e1click()"><img src="SSR/Earth/1.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e2" onclick="e2click()"><img src="SSR/Earth/2.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e3" onclick="e3click()"><img src="SSR/Earth/3.jpg" /><img class="overlayImage2" src="characters/SSR/e4.png"/></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e4" onclick="e4click()"><img src="SSR/Earth/4.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e5" onclick="e5click()"><img src="SSR/Earth/5.jpg" /><img class="overlayImage2" src="characters/SSR/e6.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e6" onclick="e6click()"><img src="SSR/Earth/6.jpg" /><img class="overlayImage2" src="characters/SSR/e2.png"/></div></td>
+		        </tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e7" onclick="e7click()"><img src="SSR/Earth/7.jpg" /><img class="overlayImage2" src="characters/SSR/e1.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e8" onclick="e8click()"><img src="SSR/Earth/8.jpg" /><img class="overlayImage2" src="characters/SSR/e3.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e9" onclick="e9click()"><img src="SSR/Earth/9.jpg" /></div></td>
+                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e10" onclick="e10click()"><img src="SSR/Earth/10.jpg" /><img class="overlayImage2" src="characters/SSR/e5.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e11" onclick="e11click()"><img src="SSR/Earth/11.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="e12" onclick="e12click()"><img src="SSR/Earth/12.jpg" /></div></td>
+				</tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e13" onclick="e13click()"><img src="SSR/Earth/13.jpg" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="e14" onclick="e14click()"><img src="SSR/Earth/14.jpg" /></div></td>
+			    </tr>
+			</table>
+			<h3 class="cText" style="color:#FFF">風</h3><table border="0" class="characterCollection">
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i1" onclick="i1click()"><img src="SSR/Wind/1.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i2" onclick="i2click()"><img src="SSR/Wind/2.jpg" /></div></td>
+		          <td><div style="position: relative; margin-top:20px" class="calcItems" id="i3" onclick="i3click()"><img src="SSR/Wind/3.jpg" /><img class="overlayImage2" src="characters/SSR/i5.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i4" onclick="i4click()"><img src="SSR/Wind/4.jpg" /><img class="overlayImage2" src="characters/SSR/i3.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i5" onclick="i5click()"><img src="SSR/Wind/5.jpg" /><img class="overlayImage2" src="characters/SSR/i4.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i6" onclick="i6click()"><img src="SSR/Wind/6.jpg" /><img class="overlayImage2" src="characters/SSR/i1.png"/></div></td>
+				</tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i7" onclick="i7click()"><img src="SSR/Wind/7.jpg" /><img class="overlayImage2" src="characters/SSR/i6.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i8" onclick="i8click()"><img src="SSR/Wind/8.jpg" /></div></td>
+		          <td><div style="position: relative; margin-top:20px" class="calcItems" id="i9" onclick="i9click()"><img src="SSR/Wind/9.jpg" /><img class="overlayImage2" src="characters/SSR/i2.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i10" onclick="i10click()"><img src="SSR/Wind/10.jpg" /><img class="overlayImage2" src="characters/SSR/i7.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i11" onclick="i11click()"><img src="SSR/Wind/11.jpg" /><img class="overlayImage2" src="characters/SSR/i8.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i12" onclick="i12click()"><img src="SSR/Wind/12.jpg" /></div></td>
+				</tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i13" onclick="i13click()"><img src="SSR/Wind/13.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i14" onclick="i14click()"><img src="SSR/Wind/14.jpg" /></div></td>
+		          <td><div style="position: relative; margin-top:20px" class="calcItems" id="i15" onclick="i15click()"><img src="SSR/Wind/15.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i16" onclick="i16click()"><img src="SSR/Wind/16.jpg" /></div></td>
 				</tr>
 			</table>
-			<h3 class="cText" style="color:#FFF">樂器</h3><table border="0" class="characterCollection">
+			<h3 class="cText" style="color:#FFF">光</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i1" onclick="i1click()"><img src="SSR/i1.jpg" /><img class="overlayImage2" src="characters/SSR/f4.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i3" onclick="i3click()" ><img src="SSR/i3.jpg" /><img class="overlayImage2" src="characters/SSR/l3.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="i5" onclick="i5click()" ><img src="SSR/i5.jpg" /><img class="overlayImage2" src="characters/SSR/e4.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="i7" onclick="i7click()" ><img src="SSR/i7.jpg" /><img class="overlayImage2" src="characters/SSR/i7.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="l1" onclick="l1click()"><img src="SSR/Light/1.jpg" /><img class="overlayImage2" src="characters/SSR/l7.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="l2" onclick="l2click()"><img src="SSR/Light/2.jpg" /><img class="overlayImage2" src="characters/SSR/l3.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l3" onclick="l3click()"><img src="SSR/Light/3.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l4" onclick="l4click()"><img src="SSR/Light/4.jpg" /><img class="overlayImage2" src="characters/SSR/l4.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l5" onclick="l5click()"><img src="SSR/Light/5.jpg" /><img class="overlayImage2" src="characters/SSR/l1.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l6" onclick="l6click()"><img src="SSR/Light/6.jpg" /><img class="overlayImage2" src="characters/SSR/l6.png"/></div></td>
+		        </tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="l7" onclick="l7click()"><img src="SSR/Light/7.jpg" /><img class="overlayImage2" src="characters/SSR/l2.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="l8" onclick="l8click()"><img src="SSR/Light/8.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l9" onclick="l9click()"><img src="SSR/Light/9.jpg" /><img class="overlayImage2" src="characters/SSR/l5.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l10" onclick="l10click()"><img src="SSR/Light/10.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l11" onclick="l11click()"><img src="SSR/Light/11.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l12" onclick="l12click()"><img src="SSR/Light/12.jpg" /></div></td>
+		        </tr>
+				<tr>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l13" onclick="l13click()"><img src="SSR/Light/13.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l14" onclick="l14click()"><img src="SSR/Light/14.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="l15" onclick="l15click()"><img src="SSR/Light/15.jpg" /></div></td>
 		        </tr>
 			</table>
-			<h3 class="cText" style="color:#FFF">格闘</h3><table border="0" class="characterCollection">
+			<h3 class="cText" style="color:#FFF">闇</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="k1" onclick="k1click()"><img src="SSR/k1.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="k3" onclick="k3click()" ><img src="SSR/k3.jpg" /><img class="overlayImage2" src="characters/SSR/f7.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="k5" onclick="k5click()" ><img src="SSR/k5.jpg" /><img class="overlayImage2" src="characters/SSR/w6.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="k7" onclick="k7click()" ><img src="SSR/k7.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="k9" onclick="k9click()" ><img src="SSR/k9.jpg" /><img class="overlayImage2" src="characters/SSR/d5.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="d1" onclick="d1click()"><img src="SSR/Dark/1.jpg" /><img class="overlayImage2" src="characters/SSR/d5.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d2" onclick="d2click()"><img src="SSR/Dark/2.jpg" /><img class="overlayImage2" src="characters/SSR/d6.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d3" onclick="d3click()"><img src="SSR/Dark/3.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d4" onclick="d4click()"><img src="SSR/Dark/4.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d5" onclick="d5click()"><img src="SSR/Dark/5.jpg" /><img class="overlayImage2" src="characters/SSR/d4.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d6" onclick="d6click()"><img src="SSR/Dark/6.jpg" /><img class="overlayImage2" src="characters/SSR/d2.png"/></div></td>
+		        </tr>
+				<tr>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="d7" onclick="d7click()"><img src="SSR/Dark/7.jpg" /><img class="overlayImage2" src="characters/SSR/d3.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d8" onclick="d8click()"><img src="SSR/Dark/8.jpg" /><img class="overlayImage2" src="characters/SSR/d1.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d9" onclick="d9click()"><img src="SSR/Dark/9.jpg" /><img class="overlayImage2" src="characters/SSR/d7.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d10" onclick="d10click()"><img src="SSR/Dark/10.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d11" onclick="d11click()"><img src="SSR/Dark/11.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d12" onclick="d12click()"><img src="SSR/Dark/12.jpg" /></div></td>
+		        </tr>
+				<tr>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d13" onclick="d13click()"><img src="SSR/Dark/13.jpg" /></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="d14" onclick="d14click()"><img src="SSR/Dark/14.jpg" /></div></td>
 		        </tr>
 			</table>
-			<h3 class="cText" style="color:#FFF">弓</h3><table border="0" class="characterCollection">
+			<h3 class="cText" style="color:#FFF">6%限定</h3><table border="0" class="characterCollection">
 				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="b1" onclick="b1click()"><img src="SSR/b1.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="b3" onclick="b3click()" ><img src="SSR/b3.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="b5" onclick="b5click()" ><img src="SSR/b5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="b7" onclick="b7click()" ><img src="SSR/b7.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="b9" onclick="b9click()" ><img src="SSR/b9.jpg" /><img class="overlayImage2" src="characters/SSR/i5.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">短劍</h3><table border="0" class="characterCollection">
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="n1" onclick="n1click()"><img src="SSR/n1.jpg" /><img class="overlayImage2" src="characters/SSR/w2.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="n3" onclick="n3click()" ><img src="SSR/n3.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="n5" onclick="n5click()" ><img src="SSR/n5.jpg" /><img class="overlayImage2" src="characters/SSR/i4.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="n7" onclick="n7click()" ><img src="SSR/n7.jpg" /><img class="overlayImage2" src="characters/SSR/f6.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="n9" onclick="n9click()" ><img src="SSR/n9.jpg" /><img class="overlayImage2" src="characters/SSR/d6.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="n11" onclick="n11click()" ><img src="SSR/n11.jpg" /></div></td>
-		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">統</h3><table border="0" class="characterCollection">
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="g1" onclick="g1click()"><img src="SSR/g1.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="g3" onclick="g3click()" ><img src="SSR/g3.jpg" /><img class="overlayImage2" src="characters/SSR/w4.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="g5" onclick="g5click()" ><img src="SSR/g5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="g7" onclick="g7click()" ><img src="SSR/g7.jpg" /><img class="overlayImage2" src="characters/SSR/i3.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">槍</h3><table border="0" class="characterCollection">
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="p1" onclick="p1click()"><img src="SSR/p1.jpg" /><img class="overlayImage2" src="characters/SSR/i1.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="p3" onclick="p3click()" ><img src="SSR/p3.jpg" /><img class="overlayImage2" src="characters/SSR/f3.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="p5" onclick="p5click()" ><img src="SSR/p5.jpg" /><img class="overlayImage2" src="characters/SSR/e6.png"/></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="p7" onclick="p7click()" ><img src="SSR/p7.jpg" /><img class="overlayImage2" src="characters/SSR/i6.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="p9" onclick="p9click()" ><img src="SSR/p9.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="p11" onclick="p11click()" ><img src="SSR/p11.jpg" /><img class="overlayImage2" src="characters/SSR/f8.png"/></div></td>
-		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">斧</h3><table border="0" class="characterCollection">
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="x1" onclick="x1click()"><img src="SSR/x1.jpg" /><img class="overlayImage2" src="characters/SSR/f5.png"/></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="x3" onclick="x3click()" ><img src="SSR/x3.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="x5" onclick="x5click()" ><img src="SSR/x5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="x7" onclick="x7click()" ><img src="SSR/x7.jpg" /><img class="overlayImage2" src="characters/SSR/i2.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="x9" onclick="x9click()" ><img src="SSR/x9.jpg" /><img class="overlayImage2" src="characters/SSR/d1.png"/></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="x11" onclick="x11click()" ><img src="SSR/x11.jpg" /><img class="overlayImage2" src="characters/SSR/e5.png"/></div></td>
-		        </tr>
-			</table>
-			<h3 class="cText" style="color:#FFF">星晶獸</h3><table border="0" class="characterCollection">
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m1" onclick="m1click()"><img src="SSR/m1.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m3" onclick="m3click()" ><img src="SSR/m3.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m5" onclick="m5click()" ><img src="SSR/m5.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m7" onclick="m7click()" ><img src="SSR/m7.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m9" onclick="m9click()" ><img src="SSR/m9.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m11" onclick="m11click()" ><img src="SSR/m11.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m13" onclick="m13click()"><img src="SSR/m13.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m15" onclick="m15click()"><img src="SSR/m15.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m17" onclick="m17click()"><img src="SSR/m17.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m19" onclick="m19click()"><img src="SSR/m19.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m21" onclick="m21click()"><img src="SSR/m21.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m22" onclick="m22click()"><img src="SSR/m22.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m24" onclick="m24click()"><img src="SSR/m24.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m26" onclick="m26click()"><img src="SSR/m26.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m28" onclick="m28click()"><img src="SSR/m28.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m30" onclick="m30click()"><img src="SSR/m30.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m32" onclick="m32click()"><img src="SSR/m32.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m34" onclick="m34click()"><img src="SSR/m34.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m36" onclick="m36click()"><img src="SSR/m36.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m37" onclick="m37click()"><img src="SSR/m37.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m38" onclick="m38click()"><img src="SSR/m38.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m39" onclick="m39click()"><img src="SSR/m39.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m41" onclick="m41click()"><img src="SSR/m41.jpg" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="m42" onclick="m42click()"><img src="SSR/m42.jpg" /></div></td>
-		        </tr>
-				<tr>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m44" onclick="m44click()"><img src="SSR/m44.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m46" onclick="m46click()"><img src="SSR/m46.jpg" /></div></td>
-			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="m47" onclick="m47click()"><img src="SSR/m47.jpg" /></div></td>
-                  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
-				  <td><div style="position: relative; margin-top:20px" class="calcItems" ><img src="images/unknown.png" /></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="limited01" onclick="limited01click()"><img src="SSR/limited01.jpg" /><img class="overlayImage2" src="characters/SSR/limited01.png"/></div></td>
+			      <td><div style="position: relative; margin-top:20px" class="calcItems" id="limited02" onclick="limited02click()"><img src="SSR/limited02.jpg" /><img class="overlayImage2" src="characters/SSR/limited02.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="limited03" onclick="limited03click()"><img src="SSR/limited03.jpg" /><img class="overlayImage2" src="characters/SSR/limited03.png"/></div></td>
+				  <td><div style="position: relative; margin-top:20px" class="calcItems" id="limited04" onclick="limited04click()"><img src="SSR/limited04.jpg" /><img class="overlayImage2" src="characters/SSR/limited04.png"/></div></td>
 		        </tr>
 			</table>
 			</div>
+			</div>
 		</div>
-	</div>
-</section>
 
-<section class="container">
-	<div class="row"><div class="col-md-6 col-sm-12">
-<div class="education">
+	<div class="col-md-6 col-sm-12">
+	<div class="education">
 				<table><tr><td class="msgbox1" width="40%"><h2><div class="updateTitle">更新日誌</div></h2></td></tr></table>
+					<table><tr><td class="education-content" width="20%">
+                    	<h3>12/27/2015: v1.1</h3>
+                        <p>取消武器Up，修正Bug，期望值計算器改成計算屬性Up</p></td></tr></table>
 					<table><tr><td class="education-content" width="20%">
                     	<h3>09/10/2015: v1.0</h3>
                         <p>新增期望值計算器 - 武器UP計算</p></td></tr></table>
@@ -749,15 +737,14 @@ var ssrGet = 1;
                      <table><tr><td class="education-content" width="20%">
                     	<h3>09/14/2015: v0.1</h3>
                         <p>具備基本的單抽和十抽功能和課金累計</p></td></tr></table>
-                    <table><tr><td class="education-content" width="20%">
-                    	<h3 style="margin-top:10%;">更新目標</h3>
-                        <li>加強界面</li>
-                        <li>增加期望值計算器 - 屬性UP</li><p></p></td></tr>
-					</table>
 			</div>
 		</div>
 	</div>
 </section>
+
+<!-- <section class="container">
+	<div class="row">
+</section> -->
 
 <!-- footer section -->
 <footer>

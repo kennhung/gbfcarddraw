@@ -1,9 +1,10 @@
 function bannerChange() {
 	var e = document.getElementById("slt_dMethod");
 	var elementUp = e.options[e.selectedIndex].value;
-	if(elementUp == 8) {
-		document.getElementById('cotentbanner').innerHTML = '<img src="images/banner_21351_5lwtgff0.png"/>';
-	} else if (elementUp == 6){
+	if (elementUp == 5){
+		document.getElementById('cotentbanner').innerHTML = '<img src="images/banner_21810_0e1tibka.png"/>';
+	}
+	else if (elementUp == 6){
 		document.getElementById('cotentbanner').innerHTML = '<img src="images/banner_21321_8r8r3ana.png"/>';
 	}
 	else {

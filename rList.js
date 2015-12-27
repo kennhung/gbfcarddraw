@@ -32,7 +32,7 @@ window.rList=[
 	[
 		"R/s4.jpg",
 		"sword",
-		"DL",
+		"light",
 		"characters/R/l2.jpg",
 		"characters/R/l2.png",
 		"Rlight2",
@@ -159,6 +159,16 @@ window.rList=[
 		"",
 		"release"
 	],
+		[
+		"R/s17.jpg",
+		"sword",
+		"water",
+		"characters/R/w6.jpg",
+		"characters/R/w6.png",
+		"Rwater6",
+		"",
+		"release"
+	],
 	[
 		"R/n1.jpg",
 		"knife",
@@ -212,7 +222,7 @@ window.rList=[
 	[
 		"R/n6.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"characters/R/d1.jpg",
 		"characters/R/d1.png",
 		"Rdark1",
@@ -242,7 +252,7 @@ window.rList=[
 	[
 		"R/n9.jpg",
 		"knife",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -252,7 +262,7 @@ window.rList=[
 	[
 		"R/n10.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -262,7 +272,7 @@ window.rList=[
 	[
 		"R/n11.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -272,7 +282,7 @@ window.rList=[
 	[
 		"R/n12.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"characters/R/d3.jpg",
 		"characters/R/d3.png",
 		"Rdark3",
@@ -282,7 +292,7 @@ window.rList=[
 	[
 		"R/n13.jpg",
 		"knife",
-		"DL",
+		"dark",
 		"characters/R/d4.jpg",
 		"characters/R/d4.png",
 		"Rdark4",
@@ -472,7 +482,7 @@ window.rList=[
 	[
 		"R/x9.jpg",
 		"axe",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -482,7 +492,7 @@ window.rList=[
 	[
 		"R/x10.jpg",
 		"axe",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -492,7 +502,7 @@ window.rList=[
 	[
 		"R/x11.jpg",
 		"axe",
-		"DL",
+		"light",
 		"characters/R/l4.jpg",
 		"characters/R/l4.png",
 		"Rlight4",
@@ -502,12 +512,22 @@ window.rList=[
 	[
 		"R/x12.jpg",
 		"axe",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
 		"",
 		""
+	],
+		[
+		"R/x13.jpg",
+		"axe",
+		"fire",
+		"characters/R/f10.jpg",
+		"characters/R/f10.png",
+		"Rfire10",
+		"",
+		"release"
 	],
 	[
 		"R/w1.jpg",
@@ -632,7 +652,7 @@ window.rList=[
 	[
 		"R/w13.jpg",
 		"wand",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -642,7 +662,7 @@ window.rList=[
 	[
 		"R/w14.jpg",
 		"wand",
-		"DL",
+		"light",
 		"characters/R/l3.jpg",
 		"characters/R/l3.png",
 		"Rlight3",
@@ -652,7 +672,7 @@ window.rList=[
 	[
 		"R/w15.jpg",
 		"wand",
-		"DL",
+		"dark",
 		"characters/R/d2.jpg",
 		"characters/R/d2.png",
 		"Rdark2",
@@ -662,7 +682,7 @@ window.rList=[
 	[
 		"R/w16.jpg",
 		"wand",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -676,6 +696,16 @@ window.rList=[
 		"characters/R/f9.jpg",
 		"characters/R/f9.png",
 		"Rfire9",
+		"",
+		"release"
+	],
+	[
+		"R/w18.jpg",
+		"wand",
+		"earth",
+		"characters/R/e9.jpg",
+		"characters/R/e9.png",
+		"Rearth9",
 		"",
 		"release"
 	],
@@ -782,7 +812,7 @@ window.rList=[
 	[
 		"R/g11.jpg",
 		"gun",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -912,7 +942,7 @@ window.rList=[
 	[
 		"R/k13.jpg",
 		"knuckle",
-		"DL",
+		"light",
 		"characters/R/l1.jpg",
 		"characters/R/l1.png",
 		"Rlight1",
@@ -1232,7 +1262,7 @@ window.rList=[
 	[
 		"R/m21.jpg",
 		"summon",
-		"DL",
+		"light",
 		"",
 		"",
 		"",
@@ -1242,7 +1272,7 @@ window.rList=[
 	[
 		"R/m22.jpg",
 		"summon",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -1252,7 +1282,7 @@ window.rList=[
 	[
 		"R/m23.jpg",
 		"summon",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
@@ -1262,7 +1292,7 @@ window.rList=[
 	[
 		"R/m24.jpg",
 		"summon",
-		"DL",
+		"dark",
 		"",
 		"",
 		"",
