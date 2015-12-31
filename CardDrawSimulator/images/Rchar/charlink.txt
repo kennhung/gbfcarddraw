@@ -1,0 +1,5 @@
+R
+http://gbf.game-a.mbga.jp/assets/img/sp/assets/npc/zoom/3020008000_01.png
+
+Weapon
+http://gbf.game-a.mbga.jp/assets/img/sp/assets/weapon/m/1020501200.jpg
