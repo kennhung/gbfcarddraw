@@ -28,6 +28,11 @@ var listSSRlimitedByAttr = {
 	'release': [],
 	'': []
 	}
+	
+var listSSRlimitedNYByAttr = {
+	'release': [],
+	'': []
+	}
 
 	
 var cardIMG;
@@ -72,6 +77,16 @@ function pickSSRlimitedByAttr(attr) {
 	return listSSRlimitedByAttr[attr][Math.floor(Math.random() * listSSRlimitedByAttr[attr].length)];
 }
 function pickSSRlimitedAll() {    
+	return ssrListLimited[Math.floor(Math.random() * ssrListLimited.length)];
+}
+
+ssrListLimitedNY.forEach(function(ssrl) { listSSRlimitedByAttr[ssrl[7]].push(ssrl);
+	});
+	
+function pickSSRlimitedNYByAttr(attr) {    
+	return listSSRlimitedByAttr[attr][Math.floor(Math.random() * listSSRlimitedByAttr[attr].length)];
+}
+function pickSSRlimitedNYAll() {    
 	return ssrListLimited[Math.floor(Math.random() * ssrListLimited.length)];
 }
 

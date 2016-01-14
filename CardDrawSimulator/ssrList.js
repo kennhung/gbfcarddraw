@@ -120,6 +120,16 @@ window.ssrList=[
 		"release"
 	],
 	[
+		"SSR/s13.jpg",
+		"sword",
+		"dark",
+		"characters/SSR/d8.jpg",
+		"characters/SSR/d8.png",
+		"SSRdark8",
+		"",
+		"release"
+	],
+	[
 		"SSR/n1.jpg",
 		"knife",
 		"water",
@@ -416,6 +426,16 @@ window.ssrList=[
 		"characters/SSR/i3.jpg",
 		"characters/SSR/i3.png",
 		"SSRwind3",
+		"",
+		"release"
+	],
+	[
+		"SSR/g5.jpg",
+		"gun",
+		"earth",
+		"characters/SSR/e7.jpg",
+		"characters/SSR/e7.png",
+		"SSRearth7",
 		"",
 		"release"
 	],
@@ -923,6 +943,16 @@ window.ssrList=[
 		"SSR/m29.jpg",
 		"summon",
 		"fire",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/m30.jpg",
+		"summon",
+		"water",
 		"",
 		"",
 		"",

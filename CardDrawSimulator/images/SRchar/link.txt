@@ -1,0 +1,5 @@
+char
+http://gbf.game-a.mbga.jp/assets/img/sp/assets/npc/m/3030037000_01.jpg
+
+weapon
+http://gbf.game-a.mbga.jp/assets/img/sp/assets/weapon/m/1030600000.jpg

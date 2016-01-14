@@ -185,6 +185,10 @@ p {
 }
 
 
+.smalllink {
+    font-size: 12px;
+}
+
 .darktitle {
     background:rgba(76,0,153,0.5);
 }
@@ -209,6 +213,20 @@ p {
   right: 0;
   bottom: -100px;
   max-width:90%;
+}
+
+.overlayImage2a {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  max-width:90%;
+}
+
+.overlayImage3 {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  max-width:100%;
 }
 .about-text-container {
     font-style: italic;
@@ -521,6 +539,14 @@ p {
         width: 100%;
         background-color: #023D69;
     }
+	
+	.smalllink {
+        float: none !important;
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+	
     .main-menu {
         max-height: 0;
         transition: max-height 0.3s;

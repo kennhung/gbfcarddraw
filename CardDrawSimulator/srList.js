@@ -120,6 +120,16 @@ window.srList=[
 		"release"
 	],
 	[
+		"SR/s13.jpg",
+		"sword",
+		"earth",
+		"characters/SR/e10.jpg",
+		"characters/SR/e10.png",
+		"SRearth10",
+		"",
+		"release"
+	],
+	[
 		"SR/n1.jpg",
 		"knife",
 		"fire",

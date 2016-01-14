@@ -272,6 +272,10 @@ h5 {
     text-transform: uppercase;
 }
 
+.smalllink {
+    font-size: 12px;
+}
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -368,16 +372,22 @@ h5 {
 .site-brand {
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .site-brand strong {
-    font-size: 24px;
+    font-size: 32px;
     font-family: 'robotobold';
 }
 
 @media screen and (max-width: 768px) {
     .site-brand {
+        float: none !important;
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+	.smalllink {
         float: none !important;
         text-align: center;
         display: block;

@@ -120,6 +120,16 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
+		"SSR/s13.jpg",
+		"sword",
+		"dark",
+		"characters/SSR/d8.jpg",
+		"characters/SSR/d8.png",
+		"SSRdark8",
+		"",
+		"release"
+	],
+	[
 		"SSR/n1.jpg",
 		"knife",
 		"water",
@@ -416,6 +426,16 @@ window.ssrListLimited=[
 		"characters/SSR/i3.jpg",
 		"characters/SSR/i3.png",
 		"SSRwind3",
+		"",
+		"release"
+	],
+	[
+		"SSR/g5.jpg",
+		"gun",
+		"earth",
+		"characters/SSR/e7.jpg",
+		"characters/SSR/e7.png",
+		"SSRearth7",
 		"",
 		"release"
 	],
@@ -930,9 +950,19 @@ window.ssrListLimited=[
 		""
 	],
 	[
+		"SSR/m30.jpg",
+		"summon",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
 		"SSR/limited01.jpg",
-		"spear",
-		"fire",
+		"katana",
+		"wind",
 		"characters/SSR/limited01.jpg",
 		"characters/SSR/limited01.png",
 		"SSRlimited01",
@@ -966,6 +996,16 @@ window.ssrListLimited=[
 		"characters/SSR/limited04.jpg",
 		"characters/SSR/limited04.png",
 		"SSRlimited04",
+		"",
+		"release"
+	],
+	[
+		"SSR/limited05.jpg",
+		"knife",
+		"wind",
+		"characters/SSR/limited05.jpg",
+		"characters/SSR/limited05.png",
+		"SSRlimited05",
 		"",
 		"release"
 	]
