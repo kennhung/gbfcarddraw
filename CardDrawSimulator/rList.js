@@ -1030,6 +1030,16 @@ window.rList=[
 		""
 	],
 	[
+		"R/b8.jpg",
+		"bow",
+		"fire",
+		"characters/R/f11.jpg",
+		"characters/R/f11.png",
+		"Rfire11",
+		"",
+		"release"
+	],
+	[
 		"R/i1.jpg",
 		"instrument",
 		"fire",

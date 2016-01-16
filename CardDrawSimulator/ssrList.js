@@ -550,6 +550,16 @@ window.ssrList=[
 		"release"
 	],
 	[
+		"SSR/b7.jpg",
+		"bow",
+		"fire",
+		"characters/SSR/f9.jpg",
+		"characters/SSR/f9.png",
+		"SSRfire9",
+		"",
+		"release"
+	],
+	[
 		"SSR/i1.jpg",
 		"instrument",
 		"fire",

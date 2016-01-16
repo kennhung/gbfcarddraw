@@ -10,7 +10,7 @@ function calculation(){
 	
 	if (elementUp == 1){
 		var upSelected = 0;
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				upSelected++;
 			}
@@ -42,8 +42,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 16 * upSelected) + (1.5 / 79 * selectedvar);
-		var ansRB = (50 / 16 * upSelected) + (50 / 79 * selectedvar);
+		var ans = (1.5 / 17 * upSelected) + (1.5 / 79 * selectedvar);
+		var ansRB = (50 / 17 * upSelected) + (50 / 79 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是火Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -63,7 +63,7 @@ function calculation(){
 		}
 		
 		var selectedvar = 0;
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -88,8 +88,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 18 * upSelected) + (1.5 / 77 * selectedvar);
-		var ansRB = (50 / 18 * upSelected) + (50 / 77 * selectedvar);
+		var ans = (1.5 / 18 * upSelected) + (1.5 / 78 * selectedvar);
+		var ansRB = (50 / 18 * upSelected) + (50 / 78 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是水Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -99,7 +99,8 @@ function calculation(){
 		+ drawAnsRB + '"  disabled>次或之前的彩虹就可以抽到目標。<br />反之運氣差的話可能要抽<input type="text" name="Display" size="4" value="' 
 		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
 		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
-	}else if (elementUp == 3){
+	}
+	else if (elementUp == 3){
 		var upSelected = 0;
 		for (var x=1; x<16; x++){
 			if (evar[x] == 1){
@@ -113,7 +114,7 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -133,8 +134,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 15 * upSelected) + (1.5 / 80 * selectedvar);
-		var ansRB = (50 / 15 * upSelected) + (50 / 80 * selectedvar);
+		var ans = (1.5 / 15 * upSelected) + (1.5 / 81 * selectedvar);
+		var ansRB = (50 / 15 * upSelected) + (50 / 81 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是土Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -164,7 +165,7 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -179,8 +180,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 16 * upSelected) + (1.5 / 79 * selectedvar);
-		var ansRB = (50 / 16 * upSelected) + (50 / 79 * selectedvar);
+		var ans = (1.5 / 16 * upSelected) + (1.5 / 80 * selectedvar);
+		var ansRB = (50 / 16 * upSelected) + (50 / 80 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是風Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -215,7 +216,7 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -225,8 +226,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 15 * upSelected) + (1.5 / 80 * selectedvar);
-		var ansRB = (50 / 15 * upSelected) + (50 / 80 * selectedvar);
+		var ans = (1.5 / 15 * upSelected) + (1.5 / 81 * selectedvar);
+		var ansRB = (50 / 15 * upSelected) + (50 / 81 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是光Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -261,7 +262,7 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		for (var x=1; x<17; x++){
+		for (var x=1; x<18; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -271,8 +272,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (1.5 / 15 * upSelected) + (1.5 / 80 * selectedvar);
-		var ansRB = (50 / 15 * upSelected) + (50 / 80 * selectedvar);
+		var ans = (1.5 / 15 * upSelected) + (1.5 / 81 * selectedvar);
+		var ansRB = (50 / 15 * upSelected) + (50 / 81 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是闇Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -287,7 +288,7 @@ function calculation(){
 		var upSelected = 0;
 		
 		var selectedvar = 0;
-		for (var x=1; x<18; x++){
+		for (var x=1; x<19; x++){
 			if (fvar[x] == 1){
 				selectedvar++;
 			}
@@ -322,8 +323,8 @@ function calculation(){
 				selectedvar++;
 			}
 		}
-		var ans = (6 / 100 * selectedvar);
-		var ansRB = (100 / 100 * selectedvar);
+		var ans = (6 / 101 * selectedvar);
+		var ansRB = (100 / 101 * selectedvar);
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是6%卡包，目前6%幾率計算並不是真正的"角色Up"幾率，"角色Up6%"的正確幾率還在研發中</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
@@ -379,6 +380,57 @@ function calculation(){
 		var drawAns = 100 / ans;
 		var drawAnsRB = 100 / ansRB;
 		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是6%卡包，新年的三個新角色Up</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
+		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
+		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
+		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
+		+ drawAnsRB + '"  disabled>次或之前的彩虹就可以抽到目標。<br />反之運氣差的話可能要抽<input type="text" name="Display" size="4" value="' 
+		+ drawAns*2 + '"  disabled>次或以上，見過<input type="text" name="Display" size="2" value="'
+		+ drawAnsRB*2 +'"  disabled>次或以上的彩虹才能抽中目標</p></div></form>';
+	}
+	else if (elementUp == 9){
+		var upSelected = 0;
+		if (fvar[17] = 1){
+			upSelected++;
+		}
+		
+		
+		var selectedvar = 0;
+		
+		for (var x=1; x<17; x++){
+			if (fvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<19; x++){
+			if (wvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<16; x++){
+			if (evar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<17; x++){
+			if (ivar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<16; x++){
+			if (lvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		for (var x=1; x<16; x++){
+			if (dvar[x] == 1){
+				selectedvar++;
+			}
+		}
+		var ans = (0.75 / 1 * upSelected) + (2.25 / 95 * selectedvar);
+		var ansRB = (25 / 1 * upSelected) + (75 / 95 * selectedvar);
+		var drawAns = 100 / ans;
+		var drawAnsRB = 100 / ansRB;
+		document.getElementById('calcResult').innerHTML = upSelected + '<form name="resultbox"><div class="numFont"><p>你現在選擇的是新角色Up卡包</p><p>你普抽抽卡達到期望值的幾率是<input type="text" name="Display" size="6" value="'
 		+ ans +'"  disabled>%<br/>相等於你運氣好的話需要<input type="text" name="Display" size="4" value="' 
 		+ drawAns + '"  disabled>抽之前就可以抽到目標<br />你抽到SSR的時候抽到目標的幾率是<input type="text" name="Display" size="6" value="'
 		+ ansRB + '"  disabled>%<br/>相等於你運氣好的話共見過<input type="text" name="Display" size="2" value="' 
@@ -550,6 +602,16 @@ function f16click(){
 	} else {
 		document.getElementById('f16').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
 		fvar[16] = 1;
+	}
+}
+
+function f17click(){
+	if (fvar[17] == 1){
+		document.getElementById('f17').innerHTML = '<img src="SSR/Fire/17.jpg" /><img class="overlayImage2" src="characters/SSR/f9.png"/>';
+		fvar[17] = 0;
+	} else {
+		document.getElementById('f17').innerHTML += '<img class="overlayBlue" src="images/selected.png"/>';
+		fvar[17] = 1;
 	}
 }
 
