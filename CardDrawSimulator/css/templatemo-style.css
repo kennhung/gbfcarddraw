@@ -17,15 +17,12 @@ a:focus {
 
 iframe { max-width: 100%; height:320px; margin: 0 0 20px 0; }
 
-@font-face { font-family: JhengHei; src: url('msjh.ttf'); } 
-@font-face { font-family: meiryo; src: url('meiryo.ttf'); } 
-
 body{
     margin:0;
     padding:0;
     background:url(../images/back.jpg) no-repeat center center fixed;
     background-size:cover;
-    font-family: JhengHei, meiryo, 'Open Sans', sans-serif;
+    font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
     font-size: 16px;
     font-weight:300;
 	color: rgba(255,255,255,1);

@@ -165,6 +165,12 @@
                 $('#loader').fadeOut(); // will first fade out the loading animation
                     $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow-y':'visible'});
+                $('.post-hover').on('click', function() {
+                  var a = $(this).find('a');
+                  if (a.length){
+                    window.location.href = a.attr('href');
+                  }
+                });
             })
             //]]>
         </script>
