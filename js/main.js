@@ -42,5 +42,6 @@ $(window).load(function () {
         })
     };
     bloggingisotope();
-    $(window).smartresize(bloggingisotope)
+    $(window).smartresize(bloggingisotope);
+
 })
