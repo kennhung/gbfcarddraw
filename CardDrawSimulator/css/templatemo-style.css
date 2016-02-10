@@ -1,9 +1,6 @@
 /* 
-
 Puzzle Template
-
 http://www.templatemo.com/tm-477-puzzle 
-
 */
 
 a,
@@ -536,14 +533,14 @@ p {
         width: 100%;
         background-color: #023D69;
     }
-	
+
 	.smalllink {
         float: none !important;
         text-align: center;
         display: block;
         margin-bottom: 30px;
     }
-	
+
     .main-menu {
         max-height: 0;
         transition: max-height 0.3s;
