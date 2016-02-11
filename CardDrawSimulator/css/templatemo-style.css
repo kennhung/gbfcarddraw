@@ -25,6 +25,17 @@ body{
 	color: rgba(255,255,255,1);
 }
 
+.srReview{
+	margin:0;
+    padding:0;
+    background:url(../images/back2.jpg) no-repeat center center fixed;
+    background-size:cover;
+    font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 16px;
+    font-weight:300;
+	color: rgba(255,255,255,1);
+}
+
 body script { display: block; white-space: pre; font: 11px Monaco, MonoSpace; margin: 0 0 20px 0; overflow-x: scroll; }
 
 .row {
