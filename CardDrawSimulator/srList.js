@@ -128,6 +128,52 @@ window.srList=[
 		"SRearth10",
 		"",
 		"release"
+	],[
+		"SR/s14.jpg",
+		"sword",
+		"wind",
+		"characters/SR/i10.jpg",
+		"characters/SR/i10.png",
+		"SRwind10",
+		"",
+		"release"
+	],[
+		"SR/s15.jpg",
+		"sword",
+		"earth",
+		"characters/SR/e16.jpg",
+		"characters/SR/e16.png",
+		"SRearth16",
+		"",
+		"release"
+	],
+	[
+		"SR/s16.jpg",
+		"sword",
+		"water",
+		"characters/SR/w11.jpg",
+		"characters/SR/w11.png",
+		"SRwater11",
+		"",
+		"release"
+	],[
+		"SR/s17.jpg",
+		"sword",
+		"light",
+		"characters/SR/l10.jpg",
+		"characters/SR/l10.png",
+		"SRlight10",
+		"",
+		"release"
+	],[
+		"SR/s18.jpg",
+		"sword",
+		"water",
+		"characters/SR/w12.jpg",
+		"characters/SR/w12.png",
+		"SRwater12",
+		"",
+		"release"
 	],
 	[
 		"SR/n1.jpg",
@@ -206,6 +252,34 @@ window.srList=[
 		"characters/SR/d5.jpg",
 		"characters/SR/d5.png",
 		"SRdark5",
+		"",
+		"release"
+	],
+	[
+		"SR/n9.jpg",
+		"knife",
+		"dark",
+		"characters/SR/d6.jpg",
+		"characters/SR/d6.png",
+		"SRdark6",
+		"",
+		"release"
+	],[
+		"SR/n10.jpg",
+		"knife",
+		"earth",
+		"characters/SR/e13.jpg",
+		"characters/SR/e13.png",
+		"SRearth13",
+		"",
+		"release"
+	],[
+		"SR/n11.jpg",
+		"knife",
+		"dark",
+		"characters/SR/d7.jpg",
+		"characters/SR/d7.png",
+		"SRdark7",
 		"",
 		"release"
 	],
@@ -299,13 +373,41 @@ window.srList=[
 		"",
 		"release"
 	],
-		[
+	[
 		"SR/p10.jpg",
 		"spear",
 		"water",
 		"characters/SR/e7.jpg",
 		"characters/SR/e7.png",
 		"SRearth7",
+		"",
+		"release"
+	],
+	[
+		"SR/p11.jpg",
+		"spear",
+		"earth",
+		"characters/SR/e11.jpg",
+		"characters/SR/e11.png",
+		"SRearth11",
+		"",
+		"release"
+	],[
+		"SR/p12.jpg",
+		"spear",
+		"earth",
+		"characters/SR/e12.jpg",
+		"characters/SR/e12.png",
+		"SRearth12",
+		"",
+		"release"
+	],[
+		"SR/p13.jpg",
+		"spear",
+		"dark",
+		"characters/SR/d9.jpg",
+		"characters/SR/d9.png",
+		"SRdark9",
 		"",
 		"release"
 	],
@@ -356,6 +458,53 @@ window.srList=[
 		"characters/SR/e8.jpg",
 		"characters/SR/e8.png",
 		"SRearth8",
+		"",
+		"release"
+	],
+	[
+		"SR/x6.jpg",
+		"axe",
+		"light",
+		"characters/SR/l8.jpg",
+		"characters/SR/l8.png",
+		"SRlight8",
+		"",
+		"release"
+	],
+	[
+		"SR/x7.jpg",
+		"axe",
+		"fire",
+		"characters/SR/f11.jpg",
+		"characters/SR/f11.png",
+		"SRfire11",
+		"",
+		"release"
+	],[
+		"SR/x8.jpg",
+		"axe",
+		"wind",
+		"characters/SR/i9.jpg",
+		"characters/SR/i9.png",
+		"SRwind9",
+		"",
+		"release"
+	],[
+		"SR/x9.jpg",
+		"axe",
+		"earth",
+		"characters/SR/e14.jpg",
+		"characters/SR/e14.png",
+		"SRearth14",
+		"",
+		"release"
+	],[
+		"SR/x9.jpg",
+		"axe",
+		"wind",
+		"characters/SR/i12.jpg",
+		"characters/SR/i12.png",
+		"SRwind12",
 		"",
 		"release"
 	],
@@ -488,6 +637,33 @@ window.srList=[
 		"SRwind7",
 		"",
 		"release"
+	],[
+		"SR/w14.jpg",
+		"wand",
+		"light",
+		"characters/SR/l9.jpg",
+		"characters/SR/l9.png",
+		"SRlight9",
+		"",
+		"release"
+	],[
+		"SR/w15.jpg",
+		"wand",
+		"fire",
+		"characters/SR/f14.jpg",
+		"characters/SR/f14.png",
+		"SRfire14",
+		"",
+		"release"
+	],[
+		"SR/w16.jpg",
+		"wand",
+		"water",
+		"characters/SR/w10.jpg",
+		"characters/SR/w10.png",
+		"SRwater10",
+		"",
+		"release"
 	],
 	[
 		"SR/g1.jpg",
@@ -558,6 +734,52 @@ window.srList=[
 		"",
 		"",
 		""
+	],[
+		"SR/g8.jpg",
+		"gun",
+		"water",
+		"characters/SR/w9.jpg",
+		"characters/SR/w9.png",
+		"SRwater9",
+		"",
+		"release"
+	],[
+		"SR/g9.jpg",
+		"gun",
+		"fire",
+		"characters/SR/f13.jpg",
+		"characters/SR/f13.png",
+		"SRfire13",
+		"",
+		"release"
+	],[
+		"SR/g10.jpg",
+		"gun",
+		"earth",
+		"characters/SR/e15.jpg",
+		"characters/SR/e15.png",
+		"SRearth15",
+		"",
+		"release"
+	],[
+		"SR/g11.jpg",
+		"gun",
+		"wind",
+		"characters/SR/i11.jpg",
+		"characters/SR/i11.png",
+		"SRwind11",
+		"",
+		"release"
+	],
+	[
+		"SR/g12.jpg",
+		"gun",
+		"dark",
+		"characters/SR/d8.jpg",
+		"characters/SR/d8.png",
+		"SRdark8",
+		"",
+		"release"
 	],
 	[
 		"SR/k1.jpg",
@@ -676,6 +898,24 @@ window.srList=[
 		"characters/SR/l2.jpg",
 		"characters/SR/l2.png",
 		"SRlight2",
+		"",
+		"release"
+	],[
+		"SR/k13.jpg",
+		"knuckle",
+		"fire",
+		"characters/SR/f12.jpg",
+		"characters/SR/f12.png",
+		"SRfire12",
+		"",
+		"release"
+	],[
+		"SR/k14.jpg",
+		"knuckle",
+		"dark",
+		"characters/SR/d10.jpg",
+		"characters/SR/d10.png",
+		"SRdark10",
 		"",
 		"release"
 	],
@@ -828,6 +1068,25 @@ window.srList=[
 		"",
 		"",
 		""
+	],
+		[
+		"SR/a4.jpg",
+		"katana",
+		"wind",
+		"characters/SR/i8.jpg",
+		"characters/SR/i8.png",
+		"SRwind8",
+		"",
+		"release"
+	],[
+		"SR/a5.jpg",
+		"katana",
+		"fire",
+		"characters/SR/f15.jpg",
+		"characters/SR/f15.png",
+		"SRfire15",
+		"",
+		"release"
 	],
 	[
 		"SR/m1.jpg",

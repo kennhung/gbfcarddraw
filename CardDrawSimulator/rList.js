@@ -159,13 +159,50 @@ window.rList=[
 		"",
 		"release"
 	],
-		[
+	[
 		"R/s17.jpg",
 		"sword",
-		"water",
-		"characters/R/w6.jpg",
-		"characters/R/w6.png",
-		"Rwater6",
+		"light",
+		"characters/R/l5.jpg",
+		"characters/R/l5.png",
+		"Rlight5",
+		"",
+		"release"
+	],[
+		"R/s18.jpg",
+		"sword",
+		"wind",
+		"characters/R/i9.jpg",
+		"characters/R/i9.png",
+		"Rwind9",
+		"",
+		"release"
+	],
+	[
+		"R/s19.jpg",
+		"sword",
+		"fire",
+		"characters/R/f13.jpg",
+		"characters/R/f13.png",
+		"Rfire13",
+		"",
+		"release"
+	],[
+		"R/s20.jpg",
+		"sword",
+		"earth",
+		"characters/R/e12.jpg",
+		"characters/R/e12.png",
+		"Rearth12",
+		"",
+		"release"
+	],[
+		"R/s21.jpg",
+		"sword",
+		"light",
+		"characters/R/l6.jpg",
+		"characters/R/l6.png",
+		"Rlight6",
 		"",
 		"release"
 	],
@@ -296,6 +333,25 @@ window.rList=[
 		"characters/R/d4.jpg",
 		"characters/R/d4.png",
 		"Rdark4",
+		"",
+		"release"
+	],
+	[
+		"R/n14.jpg",
+		"knife",
+		"fire",
+		"characters/R/f12.jpg",
+		"characters/R/f12.png",
+		"Rfire12",
+		"",
+		"release"
+	],[
+		"R/n15.jpg",
+		"knife",
+		"fire",
+		"characters/R/f14.jpg",
+		"characters/R/f14.png",
+		"Rfire14",
 		"",
 		"release"
 	],
@@ -710,6 +766,16 @@ window.rList=[
 		"release"
 	],
 	[
+		"R/w19.jpg",
+		"wand",
+		"water",
+		"characters/R/w7.jpg",
+		"characters/R/w7.png",
+		"Rwater7",
+		"",
+		"release"
+	],
+	[
 		"R/g1.jpg",
 		"gun",
 		"fire",
@@ -818,6 +884,16 @@ window.rList=[
 		"",
 		"",
 		""
+	],
+	[
+		"R/g12.jpg",
+		"gun",
+		"earth",
+		"characters/R/e11.jpg",
+		"characters/R/e11.png",
+		"Rearth11",
+		"",
+		"release"
 	],
 	[
 		"R/k1.jpg",
@@ -959,6 +1035,44 @@ window.rList=[
 		"",
 		"release"
 	],
+		[
+		"R/k15.jpg",
+		"knuckle",
+		"earth",
+		"characters/R/e10.jpg",
+		"characters/R/e10.png",
+		"Rearth10",
+		"",
+		"release"
+	],
+	[
+		"R/k16.jpg",
+		"knuckle",
+		"wind",
+		"characters/R/i10.jpg",
+		"characters/R/i10.png",
+		"Rwind10",
+		"",
+		"release"
+	],[
+		"R/k17.jpg",
+		"knuckle",
+		"water",
+		"characters/R/w8.jpg",
+		"characters/R/w8.png",
+		"Rwater8",
+		"",
+		"release"
+	],[
+		"R/k18.jpg",
+		"knuckle",
+		"water",
+		"characters/R/w9.jpg",
+		"characters/R/w9.png",
+		"Rwater9",
+		"",
+		"release"
+	],
 	[
 		"R/b1.jpg",
 		"bow",
@@ -1048,6 +1162,24 @@ window.rList=[
 		"",
 		"",
 		""
+	],[
+		"R/i2.jpg",
+		"instrument",
+		"dark",
+		"characters/R/d5.jpg",
+		"characters/R/d5.png",
+		"Rdark5",
+		"",
+		"release"
+	],[
+		"R/i3.jpg",
+		"instrument",
+		"dark",
+		"characters/R/d6.jpg",
+		"characters/R/d6.png",
+		"Rdark6",
+		"",
+		"release"
 	],
 	[
 		"R/a1.jpg",

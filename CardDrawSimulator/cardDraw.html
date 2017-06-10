@@ -12,7 +12,7 @@
 
 </script>
 	<meta charset="utf-8">
-	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v1.1b</title>
+	<title>グラブルガチャシミュレータ碧藍幻想抽卡模擬器v2.0</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Granblu Fantasy, Draw Card, Simulator, グランブルーファンタジー, グラブル, ガチャ, シミュレータ, エミュレータ">
@@ -62,8 +62,8 @@ var ssrGet = 1;
 			<div class="col-md-12 col-sm-12">
 				<img src="images/LOGO.png" class="img-responsive img-circle tm-border" alt="GBF logo">
 				<hr>
-				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv1.1b<br />碧藍幻想抽卡模擬器v1.1b</h1>
-				<h1 class="white bold shadow">by Wee張同學</h1>
+				<h1 class="tm-title bold shadow">グラブルガチャシミュレータv1.1b<br />碧藍幻想抽卡模擬器v2.0</h1>
+				<h1 class="white bold shadow">by 烏儀511</h1>
 			</div>
 		</div>
 	</div>
@@ -75,8 +75,7 @@ var ssrGet = 1;
 					<p>模擬器說明：<br />- 選擇想要的屬性Up并點選3000元十抽即可。<br />
 					- 和遊戲一樣，十抽至少會有一SR，而模擬器的抽卡幾率是82%R, 15%SR, 3%SSR，如果是6%的卡包則是79%R, 15%SR, 6%SSR。<br />
 					<!--- 抽90c的時候系統日子會增加一天，而必SSR每個月最多只可以抽一次。想抽多一次就重新整理網頁，或者90c抽掉模擬器的一個月日數即可<br />-->
-					- 模擬器的抽卡幾率和期望值計算出來的幾率是使用個人所認為的公式計算出來的，是否和官方的幾率相符，無法測試，<br />
-					- 儘管個人認為是和實際幾率相當接近的，但請各位抱著純娛樂和參考的心態來使用模擬器就好。不要太認真w<br />
+					- 暫時模擬器的幾率和官方會有偏差
 					<br />
 					- 碎碎唸：幾率這玩意是無法控制的，遊戲內有人可以3%都見彩虹，就有人可以在很有希望得獎的卡包必SSR空手而歸。請大家量力而抽，抽卡前也做好覺悟，當個成熟的玩家，享受抽卡樂趣。
 				</div>
@@ -169,8 +168,6 @@ var ssrGet = 1;
 						<option value="5">光UP</option>
 						<option value="6">闇UP</option>
 						<option value="7">6% (平均，無UP)</option>
-						<option value="8">6% (新年，新角UP)</option>
-						<option value="9">新キャラUP</option>
 					</select>
 					</p>
             </td><td style="width:12%" rowspan="2"></td></tr>
@@ -349,22 +346,34 @@ var ssrGet = 1;
 			  <td><div class="blockitems" id="Rfire9" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rfire10" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rfire11" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRfire1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire12" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="Rfire13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rfire14" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire2" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="SRfire3" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRfire6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire7" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire8" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRfire9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire10" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRfire10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire12" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRfire14" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRfire15" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRfire1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRfire2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRfire3" ><img src="images/unknown.jpg" /></div></td>
@@ -378,7 +387,13 @@ var ssrGet = 1;
 			<tr>
 			  <td><div class="blockitems" id="SSRfire8" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRfire9" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRlimited03" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire11" ><img src="images/unknown.jpg" /></div></td>
+			  </tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRfire12" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRfire14" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwater1" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
@@ -389,31 +404,49 @@ var ssrGet = 1;
 			</tr>
 			<tr>
 			  <td><div class="blockitems" id="Rwater6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwater9" ><img src="images/unknown.jpg" /></div></td>
+			  </tr>
+			<tr>
 			  <td><div class="blockitems" id="SRwater1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwater2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwater3" ><img src="images/unknown.jpg" /></div></td>
-			</tr>
-			<tr>
 			  <td><div class="blockitems" id="SRwater4" ><img src="images/unknown.jpg" /></div></td>
+			  </tr>
+			<tr>
 			  <td><div class="blockitems" id="SRwater5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwater6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwater7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater8" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRwater8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwater12" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="SSRwater1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwater2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwater3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater4" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SSRwater4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwater5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwater6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwater7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater8" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SSRwater8" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRlimited02" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater12" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwater13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwater14" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rearth1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rearth2" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
@@ -427,97 +460,145 @@ var ssrGet = 1;
 			  <td><div class="blockitems" id="Rearth7" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rearth8" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rearth9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth10" ><img src="images/unknown.jpg" /></div></td>
+			  </tr>
+			<tr>
+			  <td><div class="blockitems" id="Rearth11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rearth12" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth1" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth2" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRearth2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth3" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth6" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRearth6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth7" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth8" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRearth9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth10" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SRearth10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth12" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth14" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRearth15" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRearth16" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRearth1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRearth2" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRearth3" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SSRearth3" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRearth4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRearth5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRearth6" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRearth7" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SSRearth7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth10" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRearth11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth12" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRearth13" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="Rwind2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind3" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind5" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="Rwind5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind7" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rwind8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rwind9" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="Rwind10" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind3" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRwind4" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SRwind4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRwind7" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRwind1" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SRwind8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRwind11" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRwind12" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwind2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwind3" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="SSRwind4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwind5" ><img src="images/unknown.jpg" /></div></td>
-			</tr>
-			<tr>
 			  <td><div class="blockitems" id="SSRwind6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRwind7" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRwind8" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRlimited01" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SSRlimited05" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRwind11" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRwind12" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rlight1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rlight2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="Rlight3" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
 			  <td><div class="blockitems" id="Rlight4" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rlight5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rlight6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRlight1" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="SRlight2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRlight3" ><img src="images/unknown.jpg" /></div></td>
-			</tr>
-			<tr>
 			  <td><div class="blockitems" id="SRlight4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRlight5" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRlight6" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRlight7" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SRlight6" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRlight9" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRlight10" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight3" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRlight4" ><img src="images/unknown.jpg" /></div></td>
-			</tr>
+			  </tr>
 			<tr>
+			  <td><div class="blockitems" id="SSRlight4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRlight7" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SSRlimited04" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRlight8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRlight11" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
 			  <td><div class="blockitems" id="Rdark1" ><img src="images/unknown.jpg" /></div></td>
@@ -526,26 +607,44 @@ var ssrGet = 1;
 			  <td><div class="blockitems" id="Rdark4" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="Rdark5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="Rdark6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRdark1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRdark2" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRdark3" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="SRdark4" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
+			  <td><div class="blockitems" id="SRdark3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SRdark5" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark6" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SRdark7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark8" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SRdark10" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
 			  <td><div class="blockitems" id="SSRdark1" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRdark2" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRdark3" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark4" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SSRdark4" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRdark5" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRdark6" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="SSRdark7" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark8" ><img src="images/unknown.jpg" /></div></td>
 			</tr>
 			<tr>
-			  <td><div class="blockitems" id="SSRdark8" ><img src="images/unknown.jpg" /></div></td>
-			  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
+			  <td><div class="blockitems" id="SSRdark9" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark10" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark11" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark12" ><img src="images/unknown.jpg" /></div></td>
+			</tr>
+			<tr>
+			  <td><div class="blockitems" id="SSRdark13" ><img src="images/unknown.jpg" /></div></td>
+			  <td><div class="blockitems" id="SSRdark14" ><img src="images/unknown.jpg" /></div></td>
 			  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
 			  <td><div class="blockitems" id="" ><img src="images/unknown.png" /></div></td>
 			</tr>
@@ -555,7 +654,7 @@ var ssrGet = 1;
 </section>
 
 
-<section class="container">
+<!--<section class="container">
 	<div class="row">
 		
 	<div class="col-md-6 col-sm-12">
@@ -766,7 +865,7 @@ var ssrGet = 1;
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 
 <!-- <section class="container">
 	<div class="row">
