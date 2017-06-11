@@ -20,16 +20,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/s3.jpg",
-		"sword",
-		"water",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/s4.jpg",
 		"sword",
 		"water",
@@ -58,16 +48,6 @@ window.ssrList=[
 		"SSRearth1",
 		"",
 		"release"
-	],
-	[
-		"SSR/s7.jpg",
-		"sword",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/s8.jpg",
@@ -178,16 +158,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/n2.jpg",
-		"knife",
-		"earth",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
 		"SSR/n3.jpg",
 		"knife",
 		"wind",
@@ -216,16 +186,6 @@ window.ssrList=[
 		"SSRdark6",
 		"",
 		"release"
-	],
-	[
-		"SSR/n6.jpg",
-		"knife",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/n7.jpg",
@@ -306,26 +266,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/p5.jpg",
-		"spear",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/p5.jpg",
-		"spear",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/p6.jpg",
 		"spear",
 		"fire",
@@ -372,26 +312,6 @@ window.ssrList=[
 		"SSRfire5",
 		"",
 		"release"
-	],
-	[
-		"SSR/x2.jpg",
-		"axe",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/x3.jpg",
-		"axe",
-		"earth",
-		"",
-		"",
-		"",
-		"",
-		""
 	],
 	[
 		"SSR/x4.jpg",
@@ -512,16 +432,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/w5.jpg",
-		"wand",
-		"light",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/w6.jpg",
 		"wand",
 		"light",
@@ -616,16 +526,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/g1.jpg",
-		"gun",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/g2.jpg",
 		"gun",
 		"water",
@@ -634,16 +534,6 @@ window.ssrList=[
 		"SSRwater4",
 		"",
 		"release"
-	],
-	[
-		"SSR/g3.jpg",
-		"gun",
-		"earth",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/g4.jpg",
@@ -676,16 +566,6 @@ window.ssrList=[
 		"release"
 	],
 	[
-		"SSR/k1.jpg",
-		"knuckle",
-		"fire",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
 		"SSR/k2.jpg",
 		"knuckle",
 		"fire",
@@ -704,16 +584,6 @@ window.ssrList=[
 		"SSRwater6",
 		"",
 		"release"
-	],
-	[
-		"SSR/k4.jpg",
-		"knuckle",
-		"light",
-		"",
-		"",
-		"",
-		"",
-		""
 	],
 	[
 		"SSR/k5.jpg",
@@ -770,46 +640,6 @@ window.ssrList=[
 		"SSRwind12",
 		"",
 		"release"
-	],
-	[
-		"SSR/b1.jpg",
-		"bow",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/b2.jpg",
-		"bow",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/b3.jpg",
-		"bow",
-		"earth",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/b4.jpg",
-		"bow",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/b5.jpg",
@@ -899,36 +729,6 @@ window.ssrList=[
 		"SSRlight11",
 		"",
 		"release"
-	],
-	[
-		"SSR/a1.jpg",
-		"katana",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/a2.jpg",
-		"katana",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/a3.jpg",
-		"katana",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/a4.jpg",
@@ -1422,3 +1222,206 @@ window.ssrList=[
 	]
 ];
 
+/* Pure Weapon
+	[
+		"SSR/s3.jpg",
+		"sword",
+		"water",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	], 
+	[
+		"SSR/s7.jpg",
+		"sword",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/n2.jpg",
+		"knife",
+		"earth",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/n6.jpg",
+		"knife",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/p5.jpg",
+		"spear",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/p5.jpg",
+		"spear",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/x2.jpg",
+		"axe",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/x3.jpg",
+		"axe",
+		"earth",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/w5.jpg",
+		"wand",
+		"light",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/g1.jpg",
+		"gun",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/g3.jpg",
+		"gun",
+		"earth",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/k1.jpg",
+		"knuckle",
+		"fire",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/k4.jpg",
+		"knuckle",
+		"light",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/b1.jpg",
+		"bow",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/b2.jpg",
+		"bow",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/b3.jpg",
+		"bow",
+		"earth",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/b4.jpg",
+		"bow",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/a1.jpg",
+		"katana",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/a2.jpg",
+		"katana",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/a3.jpg",
+		"katana",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	
+	*/
