@@ -385,8 +385,8 @@ window.ssrList=[
 		"SSR/x11.jpg",
 		"axe",
 		"water",
-		"characters/SSR/w14.png",
 		"characters/SSR/w14.jpg",
+		"characters/SSR/w14.png",
 		"SSRwater14",
 		"",
 		"release"

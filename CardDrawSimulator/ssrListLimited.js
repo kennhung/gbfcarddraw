@@ -20,16 +20,6 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
-		"SSR/s3.jpg",
-		"sword",
-		"water",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/s4.jpg",
 		"sword",
 		"water",
@@ -58,16 +48,6 @@ window.ssrListLimited=[
 		"SSRearth1",
 		"",
 		"release"
-	],
-	[
-		"SSR/s7.jpg",
-		"sword",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/s8.jpg",
@@ -178,16 +158,6 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
-		"SSR/n2.jpg",
-		"knife",
-		"earth",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
 		"SSR/n3.jpg",
 		"knife",
 		"wind",
@@ -216,16 +186,6 @@ window.ssrListLimited=[
 		"SSRdark6",
 		"",
 		"release"
-	],
-	[
-		"SSR/n6.jpg",
-		"knife",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/n7.jpg",
@@ -306,26 +266,6 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
-		"SSR/p5.jpg",
-		"spear",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/p5.jpg",
-		"spear",
-		"dark",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/p6.jpg",
 		"spear",
 		"fire",
@@ -372,26 +312,6 @@ window.ssrListLimited=[
 		"SSRfire5",
 		"",
 		"release"
-	],
-	[
-		"SSR/x2.jpg",
-		"axe",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/x3.jpg",
-		"axe",
-		"earth",
-		"",
-		"",
-		"",
-		"",
-		""
 	],
 	[
 		"SSR/x4.jpg",
@@ -465,8 +385,8 @@ window.ssrListLimited=[
 		"SSR/x11.jpg",
 		"axe",
 		"water",
-		"characters/SSR/w14.png",
 		"characters/SSR/w14.jpg",
+		"characters/SSR/w14.png",
 		"SSRwater14",
 		"",
 		"release"
@@ -510,16 +430,6 @@ window.ssrListLimited=[
 		"SSRlight2",
 		"",
 		"release"
-	],
-	[
-		"SSR/w5.jpg",
-		"wand",
-		"light",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/w6.jpg",
@@ -616,16 +526,6 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
-		"SSR/g1.jpg",
-		"gun",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
 		"SSR/g2.jpg",
 		"gun",
 		"water",
@@ -634,16 +534,6 @@ window.ssrListLimited=[
 		"SSRwater4",
 		"",
 		"release"
-	],
-	[
-		"SSR/g3.jpg",
-		"gun",
-		"earth",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/g4.jpg",
@@ -676,16 +566,6 @@ window.ssrListLimited=[
 		"release"
 	],
 	[
-		"SSR/k1.jpg",
-		"knuckle",
-		"fire",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
 		"SSR/k2.jpg",
 		"knuckle",
 		"fire",
@@ -704,16 +584,6 @@ window.ssrListLimited=[
 		"SSRwater6",
 		"",
 		"release"
-	],
-	[
-		"SSR/k4.jpg",
-		"knuckle",
-		"light",
-		"",
-		"",
-		"",
-		"",
-		""
 	],
 	[
 		"SSR/k5.jpg",
@@ -770,46 +640,6 @@ window.ssrListLimited=[
 		"SSRwind12",
 		"",
 		"release"
-	],
-	[
-		"SSR/b1.jpg",
-		"bow",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/b2.jpg",
-		"bow",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/b3.jpg",
-		"bow",
-		"earth",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/b4.jpg",
-		"bow",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/b5.jpg",
@@ -899,36 +729,6 @@ window.ssrListLimited=[
 		"SSRlight11",
 		"",
 		"release"
-	],
-	[
-		"SSR/a1.jpg",
-		"katana",
-		"fire",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
-	],
-	[
-		"SSR/a2.jpg",
-		"katana",
-		"water",
-		"",
-		"",
-		"",
-		"",
-		""
-	],
-	[
-		"SSR/a3.jpg",
-		"katana",
-		"wind",
-		"",
-		"",
-		"",
-		"Ultra",
-		""
 	],
 	[
 		"SSR/a4.jpg",
@@ -1421,19 +1221,9 @@ window.ssrListLimited=[
 		""
 	],
 	[
-		"SSR/limited00.jpg",
+		"SSR/limited01.jpg",
 		"spear",
 		"fire",
-		"characters/SSR/limited00.jpg",
-		"characters/SSR/limited00.png",
-		"SSRlimited00",
-		"",
-		"release"
-	],
-	[
-		"SSR/limited01.jpg",
-		"katana",
-		"wind",
 		"characters/SSR/limited01.jpg",
 		"characters/SSR/limited01.png",
 		"SSRlimited01",
@@ -1442,8 +1232,8 @@ window.ssrListLimited=[
 	],
 	[
 		"SSR/limited02.jpg",
-		"sword",
-		"water",
+		"katana",
+		"wind",
 		"characters/SSR/limited02.jpg",
 		"characters/SSR/limited02.png",
 		"SSRlimited02",
@@ -1452,8 +1242,8 @@ window.ssrListLimited=[
 	],
 	[
 		"SSR/limited03.jpg",
-		"gun",
-		"fire",
+		"sword",
+		"water",
 		"characters/SSR/limited03.jpg",
 		"characters/SSR/limited03.png",
 		"SSRlimited03",
@@ -1472,8 +1262,8 @@ window.ssrListLimited=[
 	],
 	[
 		"SSR/limited05.jpg",
-		"knife",
-		"wind",
+		"gun",
+		"fire",
 		"characters/SSR/limited05.jpg",
 		"characters/SSR/limited05.png",
 		"SSRlimited05",
@@ -1482,17 +1272,18 @@ window.ssrListLimited=[
 	],
 	[
 		"SSR/limited06.jpg",
-		"gun",
-		"earth",
+		"knife",
+		"wind",
 		"characters/SSR/limited06.jpg",
 		"characters/SSR/limited06.png",
 		"SSRlimited06",
 		"",
 		"release"
-	],[
+	],
+	[
 		"SSR/limited07.jpg",
-		"sword",
-		"dark",
+		"gun",
+		"earth",
 		"characters/SSR/limited07.jpg",
 		"characters/SSR/limited07.png",
 		"SSRlimited07",
@@ -1500,27 +1291,27 @@ window.ssrListLimited=[
 		"release"
 	],[
 		"SSR/limited08.jpg",
-		"knife",
-		"wind",
+		"sword",
+		"dark",
 		"characters/SSR/limited08.jpg",
 		"characters/SSR/limited08.png",
 		"SSRlimited08",
 		"",
 		"release"
-		],
-	[
+	],[
 		"SSR/limited09.jpg",
-		"bow",
-		"earth",
+		"knife",
+		"wind",
 		"characters/SSR/limited09.jpg",
 		"characters/SSR/limited09.png",
 		"SSRlimited09",
 		"",
 		"release"
-	],[
+		],
+	[
 		"SSR/limited10.jpg",
-		"knife",
-		"dark",
+		"bow",
+		"earth",
 		"characters/SSR/limited10.jpg",
 		"characters/SSR/limited10.png",
 		"SSRlimited10",
@@ -1528,8 +1319,8 @@ window.ssrListLimited=[
 		"release"
 	],[
 		"SSR/limited11.jpg",
-		"katana",
-		"fire",
+		"knife",
+		"dark",
 		"characters/SSR/limited11.jpg",
 		"characters/SSR/limited11.png",
 		"SSRlimited11",
@@ -1537,13 +1328,226 @@ window.ssrListLimited=[
 		"release"
 	],[
 		"SSR/limited12.jpg",
-		"wand",
-		"water",
+		"katana",
+		"fire",
 		"characters/SSR/limited12.jpg",
 		"characters/SSR/limited12.png",
 		"SSRlimited12",
 		"",
 		"release"
+	],[
+		"SSR/limited13.jpg",
+		"wand",
+		"water",
+		"characters/SSR/limited13.jpg",
+		"characters/SSR/limited13.png",
+		"SSRlimited13",
+		"",
+		"release"
 	],
 ];
 
+
+/* Pure Weapon
+	[
+		"SSR/s3.jpg",
+		"sword",
+		"water",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	], 
+	[
+		"SSR/s7.jpg",
+		"sword",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/n2.jpg",
+		"knife",
+		"earth",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/n6.jpg",
+		"knife",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/p5.jpg",
+		"spear",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/p5.jpg",
+		"spear",
+		"dark",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/x2.jpg",
+		"axe",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/x3.jpg",
+		"axe",
+		"earth",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/w5.jpg",
+		"wand",
+		"light",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/g1.jpg",
+		"gun",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/g3.jpg",
+		"gun",
+		"earth",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/k1.jpg",
+		"knuckle",
+		"fire",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/k4.jpg",
+		"knuckle",
+		"light",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/b1.jpg",
+		"bow",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/b2.jpg",
+		"bow",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/b3.jpg",
+		"bow",
+		"earth",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/b4.jpg",
+		"bow",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/a1.jpg",
+		"katana",
+		"fire",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	[
+		"SSR/a2.jpg",
+		"katana",
+		"water",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	[
+		"SSR/a3.jpg",
+		"katana",
+		"wind",
+		"",
+		"",
+		"",
+		"Ultra",
+		""
+	],
+	
+	*/
