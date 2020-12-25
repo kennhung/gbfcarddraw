@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="pick10()">Pick 10</button>
+
+    <img id="card1" src="./images/unknown.jpg" />
+    <img id="card2" src="./images/unknown.jpg" />
+    <img id="card3" src="./images/unknown.jpg" />
+    <img id="card4" src="./images/unknown.jpg" />
+    <img id="card5" src="./images/unknown.jpg" />
+    <img id="card6" src="./images/unknown.jpg" />
+    <img id="card7" src="./images/unknown.jpg" />
+    <img id="card8" src="./images/unknown.jpg" />
+    <img id="card9" src="./images/unknown.jpg" />
+    <img id="card10" src="./images/unknown.jpg" />
+
+    <script src="./rList.js"></script>
+    <script src="./srList.js"></script>
+    <script src="./ssrList.js"></script>
+    <script>
+        function pickRAll() {
+            return rList[Math.floor(Math.random() * rList.length)];
+        }
+
+        function pickSRAll() {
+            return srList[Math.floor(Math.random() * srList.length)];
+        }
+
+        function pickSSRAll() {
+            return ssrList[Math.floor(Math.random() * ssrList.length)];
+        }
+
+        function pick10() {
+            for (var x = 0; x < 10; x++) {
+                var rareGate = Math.floor((Math.random() * 100) + 1);
+
+                var image = document.getElementById(`card${x + 1}`);
+                if (rareGate <= 79 && x < 9) {
+                    var cardIMG = pickRAll();
+                    image.setAttribute('src', `./${cardIMG[0]}`);
+                } else if (rareGate <= 94) {
+                    var cardIMG = pickSRAll();
+                    image.setAttribute('src', `./${cardIMG[0]}`);
+                }
+                else {
+                    var cardIMG = pickSSRAll();
+                    image.setAttribute('src', `./${cardIMG[0]}`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
